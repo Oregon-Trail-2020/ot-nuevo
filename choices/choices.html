@@ -15,13 +15,12 @@
 <body>
     <header>
         <div class ="logo">
-         <img src='' alt='Oregon Trail Logo' />
+        <img src='' alt='Oregon Trail Logo' />
         </div>
     </header>
     <main> 
-   
-        <ul class="choices-list">
-            <li id="">
+        <ol class="choices-list">
+            <li id="travel">
                 Continue travel
             </li>
             <li id="map">
@@ -30,14 +29,20 @@
             <li id="trunk-supplies">
                 Check inventory  
             </li>
-        </ul>
-
-
+        </ol>
         <label class="user-input"> 
-        Whats your Choice? <input type="number" value="number-input" />
+        Whats your Choice? <input type="number"/>
         </label>
         <button id="enter-key" class="enter-style">Enter</button>
-     
+        <!-- DOM STATE -->
+        <div class="dom-state">
+            <span class="weather">Wather:</span>
+            <span id="dom-weather-stat"></span>
+            <span class="energy">Energy:</span>
+            <span id="dom-energy-stat"></span>            
+            <span class="food">Food:</span>
+            <span id="dom-food-stat"></span>
+        </div>
     </main>
     <footer>
         <div></div>
