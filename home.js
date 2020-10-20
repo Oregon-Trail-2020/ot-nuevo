@@ -1,7 +1,7 @@
 import { userPickFunction } from './utils/space-bar.js';
 
 const homePick = userPickFunction();
-console.log(homePick);
+
 if (homePick === 1) {
     window.location.href = './character/character.html';
 }
