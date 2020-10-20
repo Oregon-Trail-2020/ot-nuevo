@@ -1,13 +1,17 @@
-import { userPickFunction } from './utils/space-bar.js';
 
-const homePick = userPickFunction();
+const button = document.getElementById('enter-key');
+const input = document.querySelector('input');
 
-if (homePick === 1) {
-    window.location.href = './character/character.html';
-}
-if (homePick === 2) {
-    window.location.href = './map/map.html';
-}
-if (homePick === 3) {
-    window.location.href = './bios/bio.html';
-}
+button.addEventListener('click', () => {
+    const userPick = Number(input.value);
+
+    if (userPick === 1) {
+        window.location.href = './character/character.html';
+    }
+    if (userPick === 2) {
+        window.location.href = './map/map.html';
+    }
+    if (userPick === 3) {
+        window.location.href = './bios/bio.html';
+    }
+});
