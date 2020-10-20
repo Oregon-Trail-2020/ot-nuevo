@@ -17,6 +17,7 @@ export function setInLocalStorage(key, value) {
 
 }
 
+// LOCAL STORAGE FUNCTION FOR DOM VIEW UPDATE
 
 export function saveState(state) {
     const stringyState = JSON.stringify(state);
