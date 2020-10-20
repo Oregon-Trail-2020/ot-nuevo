@@ -2,9 +2,7 @@ export function getFromLocalStorage(key) {
 
     const item = localStorage.getItem(key);
     return JSON.parse(item);
-   
 }
-   
    
    
 export function setInLocalStorage(key, value) {
@@ -13,5 +11,4 @@ export function setInLocalStorage(key, value) {
     localStorage.setItem(key, stringyItems);
    
     return value;
-   
 }
