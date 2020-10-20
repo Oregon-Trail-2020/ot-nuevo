@@ -1,5 +1,13 @@
-// import functions and grab DOM elements
+import { userPickFunction } from './utils/space-bar.js';
 
-// initialize state
-
-// set event listeners to update state and DOM
+const homePick = userPickFunction();
+console.log(homePick);
+if (homePick === 1) {
+    window.location.href = './character/character.html';
+}
+if (homePick === 2) {
+    window.location.href = './map/map.html';
+}
+if (homePick === 3) {
+    window.location.href = './bios/bio.html';
+}
