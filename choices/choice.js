@@ -1,4 +1,5 @@
 import { landmark } from '../data/data.js';
+import { getState } from '../utils/local-storage.js';
 const input = document.querySelector('input');
 
 const button = document.getElementById('enter-key');
@@ -24,6 +25,29 @@ function createChoice(choice) {
 
 createChoice(landmark[0].choices[0]);
 ///////////////////////////////////
+/*const weatherDiv = document.getElementById('weather');
+const energyDiv = document.getElementById('energy');
+const foodDiv = document.getElementById('food');
+
+weatherDiv.textContent = user.weather;
+energyDiv.textContent = user.energy;
+foodDiv.textContent = user.food;*/
+
+const user = getState('user');
+const searchParams = new URLSearchParams;
+const id = searchParams.get('id');
+
+let i;
+if (id === user.choices) {
+    i = 0;
+} else if (id === user.choice) {
+    i = 1;   
+} else if (id === user.choice) {
+    i = 2;
+}
+
+console.log(user.choice);
+
 
 
 
