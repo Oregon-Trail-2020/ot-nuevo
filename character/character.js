@@ -10,7 +10,7 @@ button.addEventListener('click', () => {
             const user = {
                 name: data.get('name'),
                 character: data.get('character'),
-                complete:
+                complete: {}
             };
             setInLocalStorage(user);
         }
@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
             const user = {
                 name: data.get('name'),
                 character: data.get('character'),
-                complete:
+                complete: {}
             };
             setInLocalStorage(user);
         }
@@ -26,7 +26,7 @@ button.addEventListener('click', () => {
             const user = {
                 name: data.get('name'),
                 character: data.get('character'),
-                complete:
+                complete: {}
             };
             setInLocalStorage(user);
         }
@@ -34,7 +34,7 @@ button.addEventListener('click', () => {
             const user = {
                 name: data.get('name'),
                 character: data.get('character'),
-                complete:
+                complete: {}
             };
             setInLocalStorage(user);
         }
