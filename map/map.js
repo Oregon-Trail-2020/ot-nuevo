@@ -2,12 +2,18 @@
 import { landmark } from '../data/data.js';
 import checkCompleted from './map-check-completed.js';
 import { getState } from '../utils/local-storage.js';
+import isDead from '../utils/is-dead.js';
 
 // console.log(landmark);
 const user = 'USER';
 
 const changeLocation = getState(user);
 // const changeLocation = { completed:[{ id:'san-diego' }] };
+
+if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
+    // send them to the results page
+    window.location = '../results/results.html';
+}
 
 const nav = document.getElementById('map');
 for (let i = 0; i < landmark.length; i++) {
