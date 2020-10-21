@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
+    <!--<link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/choices.css">
+    <link rel="stylesheet" href="styles/choices.css">-->
     <title>choices</title>
 </head>
 
 <body>
     <header>
-        <div class ="logo">
-        <img src='' alt='Oregon Trail Logo' />
+        <div class="logo">
+            <img src='' alt='Oregon Trail Logo' />
         </div>
     </header>
-    <main> 
+    <main>
         <ol class="choices-list">
             <li id="travel">
                 Continue travel
@@ -27,11 +27,11 @@
                 Checkout the Map
             </li>
             <li id="trunk-supplies">
-                Check inventory  
+                Check inventory
             </li>
         </ol>
-        <label class="user-input"> 
-        Whats your Choice? <input type="number"/>
+        <label class="user-input">
+            Whats your Choice? <input type="number" />
         </label>
         <button id="enter-key" class="enter-style">Enter</button>
         <!-- DOM VIEW UPDATE WITH STATE CHANGE -->
@@ -39,7 +39,7 @@
             <span class="weather">Weather:</span>
             <span id="dom-weather-stat"></span>
             <span class="energy">Energy:</span>
-            <span id="dom-energy-stat"></span>            
+            <span id="dom-energy-stat"></span>
             <span class="food">Food:</span>
             <span id="dom-food-stat"></span>
         </div>
@@ -48,7 +48,7 @@
         <div></div>
     </footer>
 
-    <script type="module" src="choices.js"></script>
+    <script type="module" src="./choice.js"></script>
 </body>
 
 </html>
