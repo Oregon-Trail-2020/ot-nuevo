@@ -3,6 +3,10 @@ import { getState } from '../utils/local-storage.js';
 const button = document.getElementById('enter-key');
 const input = document.querySelector('input');
 const trunkFood = document.getElementById('trunk-food');
+const trunkEnergy = document.getElementById('trunk-energy');
+const trunkRepairKit = document.getElementById('trunk-repair-kit');
+// const trunkFirstAid = document.getElementById('trunk-first-aid');
+const trunkAAA = document.getElementById('trunk-aaa');
 
 
 button.addEventListener('click', () => {
@@ -19,6 +23,10 @@ button.addEventListener('click', () => {
     }
 });
 
-const trunkState = getState('STATE');
+const trunkState = getState();
 
-trunkFood = trunkState.food;
+trunkRepairKit.textContent = trunkState.RepairKit;
+trunkFood.textContent = trunkState.food;
+trunkEnergy.textContent = trunkState.energy;
+// trunkFirstAid.textContent = trunkState.firstAid;
+trunkAAA.textContent = trunkAAA.aaa;
