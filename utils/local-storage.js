@@ -25,7 +25,7 @@ export function saveState(state) {
     localStorage.setItem(STATE, stringyState);
 }
 
-export function getstate() {
+export function getState() {
     const stringyState = localStorage.getItem(STATE);
 
     return JSON.parse(stringyState);
