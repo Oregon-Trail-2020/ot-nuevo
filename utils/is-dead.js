@@ -1,5 +1,5 @@
-function isDead(traveler) {
-    return traveler.baddog === 0;
+function isDead(user) {
+    return user.energy === 0 || user.food === 0;
 }
 
 export default isDead;

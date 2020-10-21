@@ -1,4 +1,4 @@
-const KEY = 'KEY';
+// const KEY = 'KEY';
 
 // LOCAL STORAGE FUNCTION FOR DOM VIEW UPDATE
 export function getState(KEY) {
