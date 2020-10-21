@@ -1,10 +1,12 @@
 import { getState, saveState } from '../utils/local-storage.js';
 
 const button = document.getElementById('enter-key');
+const money = document.getElementById('character-money');
 const trunkButton = document.getElementById('trunk-button');
 const input = document.querySelector('input');
 const USER = 'USER';
-
+const currentMoney = getState(USER);
+money.textContent = `$${currentMoney.money}`;
 
 button.addEventListener('click', () => {
     const userPick = Number(input.value);

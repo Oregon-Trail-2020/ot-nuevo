@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
         window.location.href = '../map/map.html';
     }
     if (userPick === 3) {
-        window.location.href = '../store/store.html';
+        window.location.href = '../store/supply-store.html';
     }
 });
 
@@ -28,6 +28,6 @@ const trunkState = getState(user);
 
 trunkMoney.textContent = `$${trunkState.money}`;
 trunkEnergy.textContent = trunkState.energy;
-trunkFood.textContent = trunkState.food;
+trunkFood.textContent = `${trunkState.food}lbs`;
 trunkRepairKit.textContent = trunkState.RepairKit;
 trunkAAA.textContent = trunkState.aaa;
