@@ -2,12 +2,13 @@ import { getState } from '../utils/local-storage.js';
 
 const button = document.getElementById('enter-key');
 const input = document.querySelector('input');
+const trunkMoney = document.getElementById('trunk-money');
 const trunkFood = document.getElementById('trunk-food');
 const trunkEnergy = document.getElementById('trunk-energy');
 const trunkRepairKit = document.getElementById('trunk-repair-kit');
-// const trunkFirstAid = document.getElementById('trunk-first-aid');
 const trunkAAA = document.getElementById('trunk-aaa');
 
+const user = 'USER';
 
 button.addEventListener('click', () => {
     const userPick = Number(input.value);
@@ -23,10 +24,10 @@ button.addEventListener('click', () => {
     }
 });
 
-const trunkState = getState();
+const trunkState = getState(user);
 
-trunkRepairKit.textContent = trunkState.RepairKit;
-trunkFood.textContent = trunkState.food;
+trunkMoney.textContent = `$${trunkState.money}`;
 trunkEnergy.textContent = trunkState.energy;
-// trunkFirstAid.textContent = trunkState.firstAid;
-trunkAAA.textContent = trunkAAA.aaa;
+trunkFood.textContent = trunkState.food;
+trunkRepairKit.textContent = trunkState.RepairKit;
+trunkAAA.textContent = trunkState.aaa;
