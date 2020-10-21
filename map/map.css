@@ -4,7 +4,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 90vw;
-    height: calc(90vw * 600 / 500);
+    height: calc(90vw * 500 / 500);
     margin: auto;
 }
 ul {
@@ -12,10 +12,10 @@ ul {
 }
 
 li, .landmark {
-    position: relative;
+    position: absolute;
     color: white;
     text-shadow: 1px 1px 1px rgba(54, 54, 54, 0.632);
-    font-size: .25em;
+    font-size: .9em;
 }
 
 .landmark.completed {
