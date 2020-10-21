@@ -1,12 +1,10 @@
-
-
 export const landmark = [
     {
         id: 'san-diego',
-        title:'San Diego',
+        title: 'San Diego',
         image: 'san-diego.jpg',
         nextLandmark: 'Los Angeles',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -25,7 +23,7 @@ export const landmark = [
                 result: `Some result 1`,
                 energy: -20,
                 food: -20,
-    
+
             }, {
                 id: 'diego3',
                 description: 'Some option 3',
@@ -39,6 +37,13 @@ export const landmark = [
         image: 'los-angeles.jpg',
         nextLandmark: 'The Grape Vine',
         map: { 
+    }, {
+
+        id: 'los-angeles',
+        title: 'Los Angeles',
+        image: 'los-angeles.jpg',
+        nextLandmark: 'The Grape Vine',
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -99,6 +104,72 @@ export const landmark = [
         image: 'big-sur.jpg',
         nextLandmark: 'San Francisco',
         map: { 
+
+        id: 'grapevine',
+        title: 'Grapevine',
+        image: 'grapevine.jpg',
+        nextLandmark: 'Big Sur',
+        map: {
+            top: '89%',
+            left: '44%'
+        },
+        description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        choices: [
+            {
+                id: 'grapevine1',
+                description: 'Some option 1',
+                result: `Some result 1`,
+                energy: +20,
+                food: -20,
+            }, {
+                id: 'grapevine2',
+                description: 'Some option 2',
+                result: `Some result 1`,
+                energy: -3,
+                food: -20,
+            }, {
+                id: 'grapevine3',
+                description: 'Some option 3',
+                result: `Some result3`,
+                energy: 0,
+            }]
+    }, {
+
+        id: 'big-sur',
+        title: 'Big Sur',
+        image: 'big-sur.jpg',
+        nextLandmark: 'San Francisco',
+        map: {
+            top: '89%',
+            left: '44%'
+        },
+        description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        choices: [
+            {
+                id: 'bigSur1',
+                description: 'Some option 1',
+                result: `Some result 1`,
+                energy: +20,
+                food: -20,
+            }, {
+                id: 'bigSur2',
+                description: 'Some option 2',
+                result: `Some result 1`,
+                energy: -3,
+                food: -20,
+            }, {
+                id: 'bigSur3',
+                description: 'Some option 3',
+                result: `Some result3`,
+                energy: 0,
+            }]
+    }, {
+
+        id: 'san-francisco',
+        title: 'San Francisco',
+        image: 'san-francisco.jpg',
+        nextLandmark: 'Napa Valley',
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -155,10 +226,10 @@ export const landmark = [
     }, {
 
         id: 'napa-valley',
-        title:'Napa Valley',
+        title: 'Napa Valley',
         image: 'napa-valley.jpg',
         nextLandmark: 'Shasta',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -185,10 +256,10 @@ export const landmark = [
     }, {
 
         id: 'shasta',
-        title:'Shasta',
+        title: 'Shasta',
         image: 'shasta.jpg',
         nextLandmark: 'Redding',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -215,10 +286,10 @@ export const landmark = [
     }, {
 
         id: 'redding',
-        title:'Redding',
+        title: 'Redding',
         image: 'redding.jpg',
         nextLandmark: 'Weed',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -245,10 +316,10 @@ export const landmark = [
     }, {
 
         id: 'weed',
-        title:'Weed',
+        title: 'Weed',
         image: 'weed.jpg',
         nextLandmark: 'Ashland',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -275,10 +346,10 @@ export const landmark = [
     }, {
 
         id: 'ashland',
-        title:'Ashland',
+        title: 'Ashland',
         image: 'ashland.jpg',
         nextLandmark: 'Eugene',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -305,10 +376,10 @@ export const landmark = [
     }, {
 
         id: 'eugene',
-        title:'Eugene',
+        title: 'Eugene',
         image: 'eugene.jpg',
         nextLandmark: 'Salem',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -335,10 +406,10 @@ export const landmark = [
     }, {
 
         id: 'salem',
-        title:'Salem',
+        title: 'Salem',
         image: 'salem.jpg',
         nextLandmark: 'Woodburn',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -365,10 +436,10 @@ export const landmark = [
     }, {
 
         id: 'woodburn',
-        title:'Woodburn',
+        title: 'Woodburn',
         image: 'woodburn.jpg',
         nextLandmark: 'Portland',
-        map: { 
+        map: {
             top: '89%',
             left: '44%'
         },
@@ -404,4 +475,3 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
 
     }];
-

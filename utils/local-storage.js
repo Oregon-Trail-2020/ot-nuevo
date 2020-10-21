@@ -1,32 +1,27 @@
-const STATE = 'STATE';
-
-
-export function getFromLocalStorage(key) {
-
-    const item = localStorage.getItem(key);
-    return JSON.parse(item);
-
-}
-
-export function setInLocalStorage(key, value) {
-
-    const stringyItems = JSON.stringify(value);
-    localStorage.setItem(key, stringyItems);
-
-    return value;
-
-}
+const KEY = 'KEY';
 
 // LOCAL STORAGE FUNCTION FOR DOM VIEW UPDATE
+export function getState(KEY) {
+    const stringyItem = localStorage.getItem(KEY);
 
-export function saveState(state) {
-    const stringyState = JSON.stringify(state);
-
-    localStorage.setItem(STATE, stringyState);
+    return JSON.parse(stringyItem);
 }
 
-export function getState() {
-    const stringyState = localStorage.getItem(STATE);
+export function saveState(KEY, value) {
+    const stringyItem = JSON.stringify(value);
 
-    return JSON.parse(stringyState);
-} 
+    localStorage.setItem(KEY, stringyItem);
+}
+
+// OLD JILLIAN CODE
+// export function getState() {
+//     const stringyState = localStorage.getItem(STATE);
+
+//     return JSON.parse(stringyState);
+// } 
+// export function saveState(KEY) {
+//     const stringyState = JSON.stringify(KEY);
+
+//     localStorage.setItem(KEY, stringyState);
+// }
+
