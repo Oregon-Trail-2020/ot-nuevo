@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
             money: character[0].money,
             aaa: 0,
             RepairKit: 0,
-            complete: {}
+            complete: []
         };
         saveState(userKey, user);
     }
@@ -30,7 +30,7 @@ button.addEventListener('click', () => {
             money: character[1].money,
             aaa: 0,
             RepairKit: 0,
-            complete: {}
+            complete: []
         };
         saveState(userKey, user);
     }
@@ -42,7 +42,7 @@ button.addEventListener('click', () => {
             money: character[2].money,
             aaa: 0,
             RepairKit: 0,
-            complete: {}
+            complete: []
         };
         saveState(userKey, user);
     }
@@ -54,7 +54,7 @@ button.addEventListener('click', () => {
             money: character[3].money,
             aaa: 0,
             RepairKit: 0,
-            complete: {}
+            complete: []
         };
         saveState(userKey, user);
     }
