@@ -2,13 +2,10 @@ import { updateView } from '../utils/update-view.js';
 
 updateView();
 
-// Add complete === true
-export function scoreLocation(choice, landmarkId, user) {
-    // add baddog to dog according to the choice's consequences
-    user.energy += choice.energy;
-    // add treats to the user according to the choices consqencuewbnf
-    user.food -= choice.food;
-    // set this adventure id to completed in the user
+export function scoreLocation(landmarkId, user) {
+    // user.energy += choice.energy;
+    // user.food -= choice.food;
+    // set this landmark id to completed on map
     user.completed[landmarkId] = true;
 }
 
