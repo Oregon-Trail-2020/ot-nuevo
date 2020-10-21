@@ -7,9 +7,12 @@
     height: calc(90vw * 600 / 500);
     margin: auto;
 }
+ul {
+    position: relative;
+}
 
 li, .landmark {
-    /* position: absolute; */
+    position: relative;
     color: white;
     text-shadow: 1px 1px 1px rgba(54, 54, 54, 0.632);
     font-size: .25em;
