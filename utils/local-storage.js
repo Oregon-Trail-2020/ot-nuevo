@@ -3,7 +3,6 @@
 // LOCAL STORAGE FUNCTION FOR STATE VIEW UPDATE
 export function getState(KEY) {
     const stringyItem = localStorage.getItem(KEY);
-
     return JSON.parse(stringyItem);
 }
 
