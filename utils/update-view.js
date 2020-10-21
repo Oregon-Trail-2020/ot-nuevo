@@ -1,5 +1,5 @@
-import { getState } from './local-storage';
-import { isDead } from './is-dead';
+import { getState } from './local-storage.js';
+import isDead from './is-dead.js';
 
 
 
