@@ -3,7 +3,7 @@ import { getState } from '../utils/local-storage.js';
 const input = document.querySelector('input');
 
 const button = document.getElementById('enter-key');
-
+const ol = document.getElementById('generatedUserChoices');
 
 function createChoice(choice) {
     const label = document.createElement('label');
@@ -37,16 +37,24 @@ const user = getState('user');
 const searchParams = new URLSearchParams;
 const id = searchParams.get('id');
 
-let i;
+/*let i;
 if (id === user.choices) {
     i = 0;
 } else if (id === user.choice) {
     i = 1;   
 } else if (id === user.choice) {
     i = 2;
+}*/
+const choices = landmark[0].choices;
+
+for (let i = 0; i < choices.length; i++) {
+    const choice = choices[i];
+   console.log(choice); 
+  const choiceAppend = createChoice(choice);
+    ol.appendChild(choiceAppend);
+    
 }
 
-console.log(user.choice);
 
 
 
