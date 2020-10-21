@@ -1,6 +1,6 @@
-// const KEY = 'KEY';
 
-// LOCAL STORAGE FUNCTION FOR DOM VIEW UPDATE
+
+// LOCAL STORAGE FUNCTION FOR STATE VIEW UPDATE
 export function getState(KEY) {
     const stringyItem = localStorage.getItem(KEY);
 

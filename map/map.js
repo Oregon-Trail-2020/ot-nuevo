@@ -34,6 +34,9 @@ for (let i = 0; i < landmark.length; i++) {
     // for every adventure
     console.log(landmark[i].title);
     let li = document.createElement('li');
+    li.style.top = landmark[i].map.top;
+    li.style.left = landmark[i].map.left;
+    console.log(landmark[i]);
 
     const location = landmark[i];
     // let li = null;
