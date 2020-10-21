@@ -9,8 +9,9 @@ export function getState(KEY) {
 
 export function saveState(KEY, value) {
     const stringyItem = JSON.stringify(value);
-
+    
     localStorage.setItem(KEY, stringyItem);
+    return value;
 }
 
 // OLD JILLIAN CODE
