@@ -1,5 +1,8 @@
-//import { getFromLocalStorage, setInLocalStorage } from '../utils/local-storage';
+//import { getState, saveState } from '../utils/local-storage';
 ///////something wrong with import runs other then that.
+
+import { saveState, getState } from './local-storage.js';
+
 /////
 let stuff =
 {
@@ -14,13 +17,13 @@ export function addStuff(inMoney, inEnergy, inFood) {
     alert('money: ' + inMoney);
     alert('energy: ' + inEnergy);
     alert('food: ' + inFood);
-    if (getFromLocalStorage(stuff) === null){
+    if (getState(stuff) === null) {
         stuff.money = inMoney;
         stuff.food = inFood;
         stuff.energy = inEnergy;
-        setInLocalStorage('stuff', stuff);
+        saveState('stuff', stuff);
     } else {
-        getFromLocalStorage(stuff); 
+        getState(stuff);
         alert('stuff-before: ' + stuff);
         stuff.money = stuff.money + inMoney;
 
@@ -28,7 +31,7 @@ export function addStuff(inMoney, inEnergy, inFood) {
 
         stuff.food = stuff.food + inFood;
         alert('stuff-after: ' + stuff);
-        setInLocalStorage('stuff', stuff);
+        saveState('stuff', stuff);
     }
 
 }
