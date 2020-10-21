@@ -1,0 +1,24 @@
+#map-id {
+    position: relative;
+    background-image: url("../assets/map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+.landmark {
+    position: absolute;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(54, 54, 54, 0.632);
+}
+
+.landmark.completed {
+    color: rgb(53, 92, 220);
+    font-size: .15em;
+}
+
+.landmark.completed:after {
+    content: ' ✔';
+}
