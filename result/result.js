@@ -1,20 +1,26 @@
 import { getState } from '../utils/local-storage.js';
- 
+import { addStuff } from '../utils/add.js';
 
 const restart = document.getElementById('restart');
 
 
-let user = 
+let user =
 {
     name: 'langston',
     energy: 50,
     food: 60
 };
+/*let stuff =
+{
+    money: 'langston',
+    energy: 50,
+    food: 60
+};*/
 
 let energy = [
     {
         id: 'high energy',
-        descripttion: 'You had a awesome trip'
+        description: 'You had a awesome trip'
     },
     {
         id: 'medium energy',
@@ -22,7 +28,7 @@ let energy = [
     },
     {
         id: 'low energy',
-        description: 'You need a coffe'
+        description: 'You need a coffee'
     },
 ];
 
@@ -67,14 +73,14 @@ if (user.food >= 220) {
     resultString = resultString + ' ' + food[1].description;
 } else {
     resultString = resultString + ' ' + food[2].description;
-} 
+}
 results.textContent = resultString;
 
-
+///addStuff(200, 30, 40);///////temporary for test purposes
 
 console.log(restart);
 restart.addEventListener('click', () => {
-     window.location.replace('../index.html');
+    window.location.replace('../index.html');
     console.log('hello');
 });
 
