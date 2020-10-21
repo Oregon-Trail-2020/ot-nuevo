@@ -1,12 +1,12 @@
-function checkCompleted(landmarks) {
+function checkCompleted(landmark) {
     const span = document.createElement('span');
     span.classList.add('location');
     span.classList.add('completed');
 
-    span.style.top = landmarks.map.top;
-    span.style.left = landmarks.map.left;
+    span.style.top = landmark.map.top;
+    span.style.left = landmark.map.left;
 
-    span.textContent = landmarks.title;
+    span.textContent = landmark.title;
     return span;
 }
 

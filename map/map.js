@@ -1,23 +1,50 @@
 
-import { landmarks } from '../data/data.js';
-import { getState } from '../utils/update-view.js';
+import { landmark } from '../data/data.js';
 import checkCompleted from './map-check-completed.js';
+import { getState } from '../utils/local-storage.js';
+
+// console.log(landmark);
+
+// const user = getState();
+const user = { completed:[] };
 
 
-const user = getState();
+// const nav = document.getElementById('map');
+// for (let i = 0; i < landmark.length; i++) {
+//     // for every adventure
+//     console.log(landmark[i].title);
+//     let span = document.createElement('span');
 
+//     const location = landmark[i];
+//     // let span = null;
 
-const nav = document.getElementById('map-id');
+//     // if the dog has completed it
+//     if (user.completed[location.ititled]) {
+//         // make a completed location display (with a checkmark)
+//         span = checkCompleted(location);
+//     } else {
+//         span.textContent = landmark[i].title; 
+//     }
+//     console.log(span);
+//     nav.appendChild(span);
+// }
 
-for (let i = 0; i < landmarks.length; i++) {
+const nav = document.getElementById('map');
+for (let i = 0; i < landmark.length; i++) {
     // for every adventure
-    const location = landmarks[i];
-    let locationDisplay = null;
+    console.log(landmark[i].title);
+    let li = document.createElement('li');
+
+    const location = landmark[i];
+    // let li = null;
 
     // if the dog has completed it
-    if (user.completed[location.id]) {
+    if (user.completed[location.ititled]) {
         // make a completed location display (with a checkmark)
-        locationDisplay = checkCompleted(location);
-    } 
-    nav.appendChild(locationDisplay);
+        li = checkCompleted(location);
+    } else {
+        li.textContent = landmark[i].title; 
+    }
+    console.log(li);
+    nav.appendChild(li);
 }
