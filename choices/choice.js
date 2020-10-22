@@ -1,7 +1,7 @@
 import { landmark } from '../data/data.js';
 import { getState } from '../utils/local-storage.js';
-const input = document.querySelector('input');
 
+const input = document.querySelector('input');
 const button = document.getElementById('enter-key');
 const ol = document.getElementById('generatedUserChoices');
 
@@ -55,13 +55,6 @@ for (let i = 0; i < choices.length; i++) {
     
 }
 
-
-
-
-
-
-
-
 ////////////////////////////////////
 button.addEventListener('click', () => {
     const userPick = Number(input.value);
@@ -75,4 +68,20 @@ button.addEventListener('click', () => {
     if (userPick === 3) {
         window.location.href = '../trunk/trunk.html';
     }
+    if (userPick === 4) {
+
+        window.location.href = '../location/location.html';
+    }
+    if (userPick === 5) {
+        window.location.href = '../location/location.html';
+    }
+    if (userPick === 6) {
+        window.location.href = '../location/location.html';
+    }
+  
+
 });
+////////////////////////
+
+const choice1 = document.getElementById('choice1');
+choice1.textContent = description;
