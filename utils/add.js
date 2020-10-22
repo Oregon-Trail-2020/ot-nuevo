@@ -2,7 +2,7 @@
 ///////something wrong with import runs other then that.
 
 import { saveState, getState } from './local-storage.js';
-
+//const USER = 'USER';
 /////
 let stuff =
 {
@@ -13,13 +13,13 @@ let stuff =
 
 //////////////stuff will be renamed to data-record.js
 
-export function addStuff(USER, inEnergy, inFood) {
+export function addStuff(inEnergy, inFood) {
 
-        getState(USER);
+    const user = getState('USER');
 
-        USER.energy = USER.energy + inEnergy;
+    user.energy = user.energy + inEnergy;
 
-        USER.food = USER.food + inFood;
-        saveState('USER', USER);
+    user.food = user.food + inFood;
+    saveState('USER', user);
 }
 
