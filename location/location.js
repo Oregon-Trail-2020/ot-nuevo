@@ -1,158 +1,102 @@
-import { landmark } from '../data/data.js';
-import { getState, saveState } from '../utils/local-storage.js';
-import { scoreLocation } from '../utils/score-location.js';
 import updateView from '../utils/update-view.js';
-import { findById } from '../utils/find-by-id.js';
+import { landmark } from '../data/data.js';
+import { getState } from '../utils/local-storage.js';
+import { addStuff } from '../utils/add.js';
 import isDead from '../utils/is-dead.js';
 import { hasCompletedAllLocations } from '../map/map-all-completed.js';
 
-
+// User sees the image and description and choices that corresponds to the location
+// const image = document.getElementById('landmark-image');
+const landmarkDescription = document.getElementById('landmark-description');
+const ol = document.getElementById('choice-list');
+const resultDescription = document.getElementById('result-description');
+const button = document.getElementById('enter-key');
+const userInput = document.getElementById('user-input');
+console.log(resultDescription);
+    // Display current state for user
 updateView();
 
-const user = getState('user');
+    // grab the search params and use them to get the location from the data array
+const user = getState('USER');
+console.log(user);
 const searchParams = new URLSearchParams(window.location.search);
-const landmarkId = searchParams.get('id');
-const location = findById(landmark, landmarkId);
-// console.log(landmarkId);
+const landmarkSubArray = searchParams.get('id');
+let nextLandmark = Number(landmarkSubArray + 1);
+    //Use that data array to display the image description and choices 
 
-const input = document.querySelector('input');
-const button = document.getElementById('enter-key');
-const ol = document.getElementById('generatedUserChoices');
-const image = document.getElementById('landmark-image');
-const choiceInput = document.getElementById('choice-input');
-const choice4 = document.getElementById('choice-4');
-const choice5 = document.getElementById('choice-5');
-const choice6 = document.getElementById('choice-6');
-const description = document.getElementById('description');
-const result = document.getElementById('result');
-
-
-
-for (let i = 0; i < landmark.length; i++) {
-    const land = landmark[i];
-    landmark.appendChild(land);
-}
-// image.src = '../assets' + landmark[landmarkId].image;
-description.textContent = landmark[landmarkId].description;
-
-// for (let i = 0; i < landmark.length; i++) {
-//     const land = landmark[i];
-
-//     landmark.appendChild(land);
-// }
-// function to append city specific choices to UI
+// image.src = '../assets' + landmark[landmarkSubArray].image;
+landmarkDescription.textContent = landmark[landmarkSubArray].description;
 
 function createChoice(choice) {
-    const label = document.createElement('li');
-    label.classList.add('input');
-
-    // const radio = document.createElement('input');
-    // radio.type = 'radio';
-    // radio.name = 'input';
-    // radio.required = true;
-    // radio.value = choice.id;
-    // label.appendChild(radio);
-    
-    const description = document.createElement('label');
-    label.textContent = choice.description;
-    label.appendChild(description);
-
-    return label;
+    const li = document.createElement('li');
+    li.textContent = choice.description;
+    return li;
 }
 
-createChoice(landmark[landmarkId].choices);
-// Sarah what was this getting from state?
+for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
+    let choice = landmark[landmarkSubArray].choices[i];
+    const li = createChoice(choice);
+    ol.appendChild(li);
+}
+    console.log();
+// On click of enter button one of two things happens 
+console.log(landmark[landmarkSubArray].choices[3].result);
 
-// const searchParams = new URLSearchParams;
-
-const choices = landmark[0].choices;
-const booger = createChoice(choices[0]);
-console.log(booger);
-// for (let i = 0; i < choices.length; i++) {
-//     const choice = choices[i];
-//     // console.log(choice); 
-//     const choiceAppend = createChoice(choice);
-//     ol.appendChild(choiceAppend);
-    
-// }
-
-// Event listener to take in user choice and appened choce result AND updated map with checkmark to complete location
-choiceInput.addEventListener('submit', function(e) {
-    e.preventDeault();
-
-    // get data from users inputed choice 
-    const choiceData = new ChoiceData(choiceInput);
-    const choiceId = choiceData.get('choice');
-
-    const choice = findById(landmark.choices, choiceId);
-
-    // get map location state out of local storage
-    const mapState = getState();
-    // generate a checkmark and manipulate map state
-    scoreLocation(choice, landmark.id, mapState);
-
-    // save checked map location state to local storage
-    saveState(mapState);
-
-    // Update user view with hiden choice result
-    choiceInput.classList.add('hidden');
-    result.classList.remove('hidden');
-    result.textContent = choice.results;
-
-    if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
-        window.location.href = '../results/results.html';
-    }
-
-    
-    updateView();
-
-});
-///////////////////////////////////
-/*const weatherDiv = document.getElementById('weather');
-const energyDiv = document.getElementById('energy');
-const foodDiv = document.getElementById('food');
-
-weatherDiv.textContent = user.weather;
-energyDiv.textContent = user.energy;
-foodDiv.textContent = user.food;*/
-
-/*let i;
-if (id === user.choices) {
-    i = 0;
-} else if (id === user.choice) {
-    i = 1;   
-} else if (id === user.choice) {
-    i = 2;
-}*/
-
-
-////////////////////////////////////
 button.addEventListener('click', () => {
-    const userPick = Number(input.value);
+    // get data from users input choice 
+    const userPick = Number(userInput.value);
 
+
+  
     if (userPick === 1) {
-        window.location.href = '../location/location.html';
-    }
-    if (userPick === 2) {
         window.location.href = '../map/map.html';
     }
+    if (userPick === 2) {
+        window.location.href = '../store/supply-store.html';
+    }
     if (userPick === 3) {
-        window.location.href = '../trunk/trunk.html';
+        resultDescription.textContent = landmark[landmarkSubArray].choices[2].result;
+        addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food);
+        
+        
+        // window.location.href = './map/map.html';
     }
     if (userPick === 4) {
-
-        window.location.href = '../location/location.html';
+        resultDescription.textContent = landmark[landmarkSubArray].choices[3].result;
+        addStuff(landmark[landmarkSubArray].choices[3].energy, landmark[landmarkSubArray].choices[3].food);
+        // window.location.href = './map/map.html';
     }
     if (userPick === 5) {
-        window.location.href = '../location/location.html';
+        resultDescription.textContent = landmark[landmarkSubArray].choices[4].result;
+        addStuff(landmark[landmarkSubArray].choices[4].energy, landmark[landmarkSubArray].choices[4].food);
+        // window.location.href = './map/map.html';
     }
-    if (userPick === 6) {
-        window.location.href = '../location/location.html';
-    }
-  
+    // display result div
+
+    // set timeout 
+    setTimeout(() => {
+        if (isDead(user)) {
+            window.location.href = '../result/result.html';
+        }
+        if (hasCompletedAllLocations(landmark, user)) {
+            window.location.href = '../result/result.html';
+        }
+        window.location.href = `../location/location.html?id=${nextLandmark}`;
+    }, 5000);  
+    
+    // update state and view function
+    // setting user completed function - scoreLocation <--- this sets to completed [true]
+    
+        // if statement if user dies or completes the game that take user to results
+        // else statement direct to next location     
+
 
 });
-////////////////////////
-
-const choice1 = document.getElementById('choice1');
-// choice1.textContent = description;
+    // One through 2 link to a new page
+    // three and five affect state and show a results div
+        // The search param grabs the result from the data array and displays the result
+        // The search param changes state and state view
+            //  Change complete to true and add check to map
+            // check if allChecked or dead and send to results page
+        // setTimeOut lets the user read result before sending them to the next location
+            // The search params moves user to the next location
