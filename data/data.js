@@ -28,7 +28,8 @@ export const landmark = [
                 id: 'diego3',
                 description: 'Some option 3',
                 result: `Some result3`,
-
+                energy: -20,
+                food: -20,
             }]
     }, {
 
