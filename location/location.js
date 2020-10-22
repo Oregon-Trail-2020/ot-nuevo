@@ -2,7 +2,7 @@ import updateView from '../utils/update-view.js';
 import { landmark } from '../data/data.js';
 import { getState } from '../utils/local-storage.js';
 import { addStuff } from '../utils/add.js';
-
+import { isDead } from '../utils/is-dead.js';
 // User sees the image and description and choices that corresponds to the location
 const image = document.getElementById('landmark-image');
 const landmarkDescription = document.getElementById('landmark-description');
@@ -10,13 +10,16 @@ const ol = document.getElementById('choice-list');
 const resultDescription = document.getElementById('result-description');
 const button = document.getElementById('enter-key');
 const userInput = document.getElementById('user-input');
-
+console.log(resultDescription);
     // Display current state for user
 updateView();
+
     // grab the search params and use them to get the location from the data array
-const user = getState('user');
+const user = getState('USER');
+console.log(user);
 const searchParams = new URLSearchParams(window.location.search);
 const landmarkSubArray = searchParams.get('id');
+let nextLandmark = Number(landmarkSubArray + 1);
     //Use that data array to display the image description and choices 
 
 // image.src = '../assets' + landmark[landmarkSubArray].image;
@@ -33,44 +36,56 @@ for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
     const li = createChoice(choice);
     ol.appendChild(li);
 }
-
+    console.log();
 // On click of enter button one of two things happens 
+console.log(landmark[landmarkSubArray].choices[3].result);
+
 button.addEventListener('click', () => {
     // get data from users input choice 
     const userPick = Number(userInput.value);
 
-    console.log(userPick);
-    // 
-    if (userPick === 1 ) {
-        window.location.href = './map/map.html';
+
+  
+    if (userPick === 1) {
+        window.location.href = '../map/map.html';
     }
-    if (userPick === 2 ) {
-        window.location.href = './store/supply-store.html';
+    if (userPick === 2) {
+        window.location.href = '../store/supply-store.html';
     }
-    if (userPick === 3 ) {
-        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
-        const result = addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food)
-        console.log(result)
+    if (userPick === 3) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices[2].result;
+        addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food);
+        
+        
         // window.location.href = './map/map.html';
     }
-    if (userPick === 4 ) {
-        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
+    if (userPick === 4) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices[3].result;
+        addStuff(landmark[landmarkSubArray].choices[3].energy, landmark[landmarkSubArray].choices[3].food);
         // window.location.href = './map/map.html';
     }
-    if (userPick === 5 ) {
-        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
+    if (userPick === 5) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices[4].result;
+        addStuff(landmark[landmarkSubArray].choices[4].energy, landmark[landmarkSubArray].choices[4].food);
         // window.location.href = './map/map.html';
     }
     // display result div
+
     // set timeout 
+    setTimeout(() => {
+        if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
+            window.location.href = './result/result.html';
+         }
+        window.location.href = `../location/location.html?id=${nextLandmark}`;
+        
+    }, 10000);  
+    
     // update state and view function
     // setting user completed function - scoreLocation <--- this sets to completed [true]
     
         // if statement if user dies or completes the game that take user to results
         // else statement direct to next location     
-        
 
-    resultDescription.textContent = landmark[landmarkSubArray].choices.result;
 
 });
     // One through 2 link to a new page
