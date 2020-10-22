@@ -50,7 +50,7 @@ button.addEventListener('click', () => {
         window.location = './';
     } else {
         // If travel has happened user goes back to choice page:
-        window.location.href = '../choices/choices.html';
+        window.location.href = '../location/location.html';
     }
     
 });
