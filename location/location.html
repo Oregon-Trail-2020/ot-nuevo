@@ -6,56 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="./location.css">
-    <title>Location</title>
+    <!--<link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/location.css">-->
+    <title>location</title>
 </head>
 
 <body>
     <header>
-        <div class ="logo">
-        <img src='' alt='Oregon Trail Logo' />
+        <div class="logo">
+            <img src='' alt='Oregon Trail Logo' />
         </div>
     </header>
-    <main> 
-        <div id="location-image">
-
+    <main>
+        <div class="location-image">
+            <img id="landmark-image" src="" alt="">
         </div>
+        <div class="location-description">
+            <p id="landmark-description" >
 
-        <div id="location-description">
-            <p>
-                
+            </p>
+            <p id="result-description">
+
             </p>
         </div>
-
-        <ul class="choices-list">
-            <li id="">
-                Continue travel
-            </li>
-            <li id="map">
-                Checkout the Map
-            </li>
-            <li id="trunk-supplies">
-                Check inventory  
-            </li>
-        </ul>
-
-
-        <label class="user-input"> 
-        Whats your Choice? <input type="number" value="number-input" />
+        <div>
+            <ol class="location-list" id='choice-list'>
+            </ol>
+        </div>
+        <label class="user-input">
+            Whats your Choice? <input type="number" id="user-input" />
         </label>
         <button id="enter-key" class="enter-style">Enter</button>
-
-        <!-- DOM VIEW UPDATE WITH STATE CHANGE -->
-        <div class="dom-state">
-            <span class="weather">Wather:</span>
-            <span id="dom-weather-stat"></span>
+        <!-- state VIEW UPDATE WITH sTATE CHANGE -->
+        <div class="state-state">
             <span class="energy">Energy:</span>
-            <span id="dom-energy-stat"></span>            
+            <span id="energy"></span>
             <span class="food">Food:</span>
-            <span id="dom-food-stat"></span>
+            <span id="food"></span>
         </div>
+
     </main>
     <footer>
         <div></div>

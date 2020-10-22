@@ -11,6 +11,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            }, {
+
                 id: 'diego1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -28,7 +36,8 @@ export const landmark = [
                 id: 'diego3',
                 description: 'Some option 3',
                 result: `Some result3`,
-
+                energy: -20,
+                food: -20,
             }]
     }, {
 
@@ -40,8 +49,16 @@ export const landmark = [
             top: '88%',
             left: '20%'
         },
-        description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        description: 'I am in LA baby! dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'la1',
                 description: 'Some option 1',
@@ -70,8 +87,16 @@ export const landmark = [
             top: '80%',
             left: '14%'
         },
-        description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        description: 'Hi there dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'grapevine1',
                 description: 'Some option 1',
@@ -103,6 +128,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
+            {
                 id: 'bigSur1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -132,6 +165,14 @@ export const landmark = [
         },
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'la1',
                 description: 'Some option 1',
@@ -163,6 +204,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
+            {
                 id: 'napa1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -193,6 +242,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
+            {
                 id: 'shasta1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -210,39 +267,7 @@ export const landmark = [
                 result: `Some result3`,
                 energy: 0,
             }]
-    }, 
-    // {
-
-    //     id: 'redding',
-    //     title: 'Redding',
-    //     image: 'redding.jpg',
-    //     nextLandmark: 'Weed',
-    //     map: {
-    //         top: '40%',
-    //         left: '11%'
-    //     },
-    //     description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    //     choices: [
-    //         {
-    //             id: 'redding1',
-    //             description: 'Some option 1',
-    //             result: `Some result 1`,
-    //             energy: +20,
-    //             food: -20,
-    //         }, {
-    //             id: 'redding2',
-    //             description: 'Some option 2',
-    //             result: `Some result 1`,
-    //             energy: -3,
-    //             food: -20,
-    //         }, {
-    //             id: 'redding3',
-    //             description: 'Some option 3',
-    //             result: `Some result3`,
-    //             energy: 0,
-    //         }]
-    // }, 
-    {
+    }, {
 
         id: 'weed',
         title: 'Weed',
@@ -254,6 +279,14 @@ export const landmark = [
         },
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'weed1',
                 description: 'Some option 1',
@@ -285,6 +318,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
+            {
                 id: 'ashland1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -314,6 +355,14 @@ export const landmark = [
         },
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'eugene1',
                 description: 'Some option 1',
@@ -345,6 +394,14 @@ export const landmark = [
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
+            {
                 id: 'salem1',
                 description: 'Some option 1',
                 result: `Some result 1`,
@@ -374,6 +431,14 @@ export const landmark = [
         },
         description: 'dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
+            {
+                id: 'map',
+                description: 'Check out the map'
+
+            }, {
+                id: 'inventory',
+                description: 'Check inventory'
+            },
             {
                 id: 'woodburn1',
                 description: 'Some option 1',

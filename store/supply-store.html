@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/supply-store.css">
+    <!-- <link rel="stylesheet" href="../styles/reset.css"> -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./supply-store.css">
     <title>Supply store</title>
 </head>
 
@@ -19,17 +19,15 @@
         </div>
     </header>
     <main>  
-        <div></div>
+        <div>Money remaining:<span  id="character-money"></span></div>
       <ol class="supply-store-list">
-            <li id="flat-tire">
-                Flat Tire Repair Kit (spare tire included)     
-            </li>
+
             <li id="Food">
                 Food      
            </li>
-            <li id="first-aid">
-                First Aide Kit      
-           </li>
+           <li id="flat-tire">
+            Flat Tire Repair Kit  
+            </li>
             <li id="triple-a">
                 AAA                     
             </li>
@@ -37,7 +35,8 @@
     <label class="user-input"> 
         Whats your Choice? <input type="number" value="number-input" />
         </label>
-        <button id="enter-key" class="enter-style">Enter</button>
+        <button id="buy-key" class="buy-style">Buy</button>
+        <button id="trunk-button">back</button>
      
     </main>
     <footer>
