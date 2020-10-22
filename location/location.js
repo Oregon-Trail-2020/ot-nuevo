@@ -26,6 +26,7 @@ const result = document.getElementById('result');
 image.src = '../assets/' + landmark.image;
 description.textContent = landmark.description;
 
+
 for (let i = 0; i < landmark.length; i++) {
     const land = landmark[i];
     landmark.appendChild(land);
