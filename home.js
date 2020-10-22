@@ -12,6 +12,6 @@ button.addEventListener('click', () => {
         window.location.href = './map/map.html';
     }
     if (userPick === 3) {
-        window.location.href = './bios/bio.html';
+        window.location.href = './bio/bio.html';
     }
 });

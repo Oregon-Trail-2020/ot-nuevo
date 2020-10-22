@@ -1,6 +1,6 @@
 import { getState, saveState } from '../utils/local-storage.js';
 
-const button = document.getElementById('enter-key');
+const button = document.getElementById('buy-key');
 const money = document.getElementById('character-money');
 const trunkButton = document.getElementById('trunk-button');
 const input = document.querySelector('input');
@@ -30,5 +30,6 @@ button.addEventListener('click', () => {
 });
 
 trunkButton.addEventListener('click', () => {
-    window.location.href = '../trunk/trunk.html';
+    window.location.href = '../location/location.html?id=0';
+
 });
