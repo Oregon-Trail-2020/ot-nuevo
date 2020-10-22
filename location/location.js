@@ -1,5 +1,6 @@
 import { landmark } from '../data/data.js';
-import { getState, saveState, scoreLocation } from '../utils/local-storage.js';
+import { getState, saveState } from '../utils/local-storage.js';
+import { scoreLocation } from '../utils/score-location.js';
 import updateView from '../utils/update-view.js';
 import { findById } from '../utils/find-by-id.js';
 import isDead from '../utils/is-dead.js';
@@ -9,8 +10,9 @@ updateView();
 
 const user = getState('user');
 const searchParams = new URLSearchParams(window.location.search);
-const id = searchParams.get('id');
-// const location = findById(landmark, cityId);
+const landmarkId = searchParams.get('id');
+const location = findById(landmark, landmarkId);
+
 
 const input = document.querySelector('input');
 const button = document.getElementById('enter-key');
@@ -23,14 +25,15 @@ const choice6 = document.getElementById('choice-6');
 const description = document.getElementById('description');
 const result = document.getElementById('result');
 
-image.src = '../assets/' + landmark.image;
+
+// image.src = '../assets/' + landmark.image;
 description.textContent = landmark.description;
 
-for (let i = 0; i < landmark.length; i++) {
-    const land = landmark[i];
-    landmark.appendChild(land);
-}
+// for (let i = 0; i < landmark.length; i++) {
+//     const land = landmark[i];
 
+//     landmark.appendChild(land);
+// }
 // function to append city specific choices to UI
 function createChoice(choice) {
     const label = document.createElement('label');
@@ -57,13 +60,13 @@ createChoice(landmark[0].choices[0]);
 
 const choices = landmark[0].choices;
 
-for (let i = 0; i < choices.length; i++) {
-    const choice = choices[i];
-    console.log(choice); 
-    const choiceAppend = createChoice(choice);
-    ol.appendChild(choiceAppend);
+// for (let i = 0; i < choices.length; i++) {
+//     const choice = choices[i];
+//     // console.log(choice); 
+//     const choiceAppend = createChoice(choice);
+//     ol.appendChild(choiceAppend);
     
-}
+// }
 
 // Event listener to take in user choice and appened choce result AND updated map with checkmark to complete location
 choiceInput.addEventListener('submit', function(e) {
@@ -144,4 +147,4 @@ button.addEventListener('click', () => {
 ////////////////////////
 
 const choice1 = document.getElementById('choice1');
-choice1.textContent = description;
+// choice1.textContent = description;
