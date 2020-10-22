@@ -1,6 +1,8 @@
 import updateView from '../utils/update-view.js';
 import { landmark } from '../data/data.js';
 import { getState } from '../utils/local-storage.js';
+import { addStuff } from '../utils/add.js';
+
 // User sees the image and description and choices that corresponds to the location
 const image = document.getElementById('landmark-image');
 const landmarkDescription = document.getElementById('landmark-description');
@@ -20,13 +22,11 @@ const landmarkSubArray = searchParams.get('id');
 // image.src = '../assets' + landmark[landmarkSubArray].image;
 landmarkDescription.textContent = landmark[landmarkSubArray].description;
 
-
 function createChoice(choice) {
     const li = document.createElement('li');
     li.textContent = choice.description;
     return li;
 }
-
 
 for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
     let choice = landmark[landmarkSubArray].choices[i];
@@ -36,6 +36,41 @@ for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
 
 // On click of enter button one of two things happens 
 button.addEventListener('click', () => {
+    // get data from users input choice 
+    const userPick = Number(userInput.value);
+
+    console.log(userPick);
+    // 
+    if (userPick === 1 ) {
+        window.location.href = './map/map.html';
+    }
+    if (userPick === 2 ) {
+        window.location.href = './store/supply-store.html';
+    }
+    if (userPick === 3 ) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
+        const result = addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food)
+        console.log(result)
+        // window.location.href = './map/map.html';
+    }
+    if (userPick === 4 ) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
+        // window.location.href = './map/map.html';
+    }
+    if (userPick === 5 ) {
+        resultDescription.textContent = landmark[landmarkSubArray].choices.result;
+        // window.location.href = './map/map.html';
+    }
+    // display result div
+    // set timeout 
+    // update state and view function
+    // setting user completed function - scoreLocation <--- this sets to completed [true]
+    
+        // if statement if user dies or completes the game that take user to results
+        // else statement direct to next location     
+        
+
+    resultDescription.textContent = landmark[landmarkSubArray].choices.result;
 
 });
     // One through 2 link to a new page
