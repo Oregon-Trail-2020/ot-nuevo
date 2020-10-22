@@ -3,7 +3,7 @@ export default function determineNextLocation(landmark) {
     let landmarkIndex = choices.indexOf(choicesDescription);
     landmarkIndex++;
     if (landmarkIndex < choices.length) {
-        const nextLandmark = '../game-play/?id=' + choices[landmarkIndex].id;
+        const nextLandmark = './location?id=' + choices[landmarkIndex].id;
         return nextLandmark;
     }
 }
