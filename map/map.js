@@ -9,7 +9,6 @@ import isDead from '../utils/is-dead.js';
 const user = 'USER';
 
 const changeLocation = getState(user);
-// JILLIAN THIS NEEDS TO HAPPEN ON LOAD!!!!!! GOD DAMMIT!
 // if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
 //     // send them to the results page
 //     window.location = '../results/results.html';

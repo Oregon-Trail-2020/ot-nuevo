@@ -13,25 +13,13 @@ let stuff =
 
 //////////////stuff will be renamed to data-record.js
 
-export function addStuff(inMoney, inEnergy, inFood) {
-    alert('money: ' + inMoney);
-    alert('energy: ' + inEnergy);
-    alert('food: ' + inFood);
-    if (getState(stuff) === null) {
-        stuff.money = inMoney;
-        stuff.food = inFood;
-        stuff.energy = inEnergy;
-        saveState('stuff', stuff);
-    } else {
-        getState(stuff);
-        alert('stuff-before: ' + stuff);
-        stuff.money = stuff.money + inMoney;
+export function addStuff(USER, inEnergy, inFood) {
 
-        stuff.energy = stuff.energy + inEnergy;
+        getState(USER);
 
-        stuff.food = stuff.food + inFood;
-        alert('stuff-after: ' + stuff);
-        saveState('stuff', stuff);
-    }
+        USER.energy = USER.energy + inEnergy;
 
+        USER.food = USER.food + inFood;
+        saveState('USER', USER);
 }
+
