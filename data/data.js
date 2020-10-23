@@ -2,7 +2,7 @@ export const landmark = [
     {
         id: 'san-diego',
         title: 'San Diego',
-        image: 'san-diego.jpg',
+        image: 'san-diego.png',
         nextLandmark: 'Los Angeles',
         map: {
             top: '96%',
@@ -43,7 +43,7 @@ export const landmark = [
 
         id: 'los-angeles',
         title: 'Los Angeles',
-        image: 'los-angeles.jpg',
+        image: 'los-angeles.png',
         nextLandmark: 'The Grape Vine',
         map: {
             top: '88%',
@@ -81,7 +81,7 @@ export const landmark = [
 
         id: 'grapevine',
         title: 'Grapevine',
-        image: 'grapevine.jpg',
+        image: 'grapevine.png',
         nextLandmark: 'Big Sur',
         map: {
             top: '80%',
@@ -119,7 +119,7 @@ export const landmark = [
 
         id: 'big-sur',
         title: 'Big Sur',
-        image: 'big-sur.jpg',
+        image: 'big-sur.png',
         nextLandmark: 'San Francisco',
         map: {
             top: '67%',
@@ -157,7 +157,7 @@ export const landmark = [
 
         id: 'san-francisco',
         title: 'San Francisco',
-        image: 'san-francisco.jpg',
+        image: 'san-francisco.png',
         nextLandmark: 'Napa Valley',
         map: {
             top: '59%',
@@ -195,7 +195,7 @@ export const landmark = [
 
         id: 'napa-valley',
         title: 'Napa Valley',
-        image: 'napa-valley.jpg',
+        image: 'napa-valley.png',
         nextLandmark: 'Shasta',
         map: {
             top: '55%',
@@ -233,7 +233,7 @@ export const landmark = [
 
         id: 'shasta',
         title: 'Shasta',
-        image: 'shasta.jpg',
+        image: 'shasta.png',
         nextLandmark: 'Weed',
         map: {
             top: '39%',
@@ -271,7 +271,7 @@ export const landmark = [
 
         id: 'weed',
         title: 'Weed',
-        image: 'weed.jpg',
+        image: 'weed.png',
         nextLandmark: 'Ashland',
         map: {
             top: '36%',
@@ -309,7 +309,7 @@ export const landmark = [
 
         id: 'ashland',
         title: 'Ashland',
-        image: 'ashland.jpg',
+        image: 'ashland.png',
         nextLandmark: 'Eugene',
         map: {
             top: '30%',
@@ -347,7 +347,7 @@ export const landmark = [
 
         id: 'eugene',
         title: 'Eugene',
-        image: 'eugene.jpg',
+        image: 'eugene.png',
         nextLandmark: 'Salem',
         map: {
             top: '25%',
@@ -385,7 +385,7 @@ export const landmark = [
 
         id: 'salem',
         title: 'Salem',
-        image: 'salem.jpg',
+        image: 'salem.png',
         nextLandmark: 'Woodburn',
         map: {
             top: '20%',
@@ -423,7 +423,7 @@ export const landmark = [
 
         id: 'woodburn',
         title: 'Woodburn',
-        image: 'woodburn.jpg',
+        image: 'woodburn.png',
         nextLandmark: 'Portland',
         map: {
             top: '15%',
@@ -461,7 +461,7 @@ export const landmark = [
 
         id: 'portland',
         title: 'Portland',
-        image: 'portland.jpg',
+        image: 'portland.png',
         map: {
             top: '12%',
             left: '18%'
