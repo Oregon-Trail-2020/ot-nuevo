@@ -1,3 +1,10 @@
+.bio-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
 .stone-link {
     display: flex;
     flex-direction: column;
