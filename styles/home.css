@@ -1,13 +1,8 @@
-body {
-    background-image: url(../assets/home/NUEVO.png);
-    background-repeat: no-repeat;
-    max-width: 1000px;
-    /* margin: 0 auto;
-    height: auto;
-    width: auto; */
+
+header {
+margin-bottom: 20px;
 }
 main {
-    margin-top: 370px;
     width: 1000;
 }
 
@@ -19,5 +14,15 @@ main {
     margin: 25px;
 }
 .home-title {
+    font-size: 2.5rem;
+}
+
+.home-copy {
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 2rem;
+}
+
+.home-instruction {
+    font-size: 1.5rem;
 }

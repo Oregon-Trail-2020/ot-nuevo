@@ -23,8 +23,8 @@ if (hasCompletedAllLocations(landmark, finalUser)) {
 }
 
 window.onload = function() {
-    document.getElementById(audio).play();
-}
+    audio.play();
+};
 
 restart.addEventListener('click', () => {
     window.location.replace('../index.html');
