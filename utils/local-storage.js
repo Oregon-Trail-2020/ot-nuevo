@@ -13,15 +13,4 @@ export function saveState(KEY, value) {
     return value;
 }
 
-// OLD JILLIAN CODE
-// export function getState() {
-//     const stringyState = localStorage.getItem(STATE);
-
-//     return JSON.parse(stringyState);
-// } 
-// export function saveState(KEY) {
-//     const stringyState = JSON.stringify(KEY);
-
-//     localStorage.setItem(KEY, stringyState);
-// }
 
