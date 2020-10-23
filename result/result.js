@@ -1,88 +1,26 @@
+import { getState } from '../utils/local-storage.js';
+import isDead from '../utils/is-dead.js';
+import { hasCompletedAllLocations } from '../map/map-all-completed.js';
+import { landmark } from '../data/data.js';
+
+const user = 'USER';
 
 const restart = document.getElementById('restart');
-
-
-let user =
-{
-    name: 'langston',
-    energy: 50,
-    food: 60
-};
-/*let stuff =
-{
-    money: 'langston',
-    energy: 50,
-    food: 60
-};*/
-
-let energy = [
-    {
-        id: 'high energy',
-        description: 'You had a awesome trip'
-    },
-    {
-        id: 'medium energy',
-        description: 'You wore yourself out take more time for you'
-    },
-    {
-        id: 'low energy',
-        description: 'You need a coffee'
-    },
-];
-
-let food = [
-    {
-        id: 'Your full',
-        description: 'You might have ate too much'
-    },
-    {
-        id: 'Your will need to eat soon',
-        description: 'You need to eat soon or you will wither away'
-    },
-    {
-        id: 'You hungry',
-        description: 'You need to eat soon or you will wither away'
-    },
-];
-
-///////////
-let foods = document.getElementById('foodDiv');
-let energys = document.getElementById('energyDiv');
-
-
-
-foods.textContent = user.food;
-energys.textContent = user.energy;
-
+const food = document.getElementById('foodDiv');
+const energy = document.getElementById('energyDiv');
 const results = document.getElementById('result');
-let resultString;
 
-if (user.energy >= 220) {
-    resultString = energy[0].description;
-} else if (user.energy < 220 && user.energy > 60) {
-    resultString = energy[1].description;
-} else {
-    resultString = energy[2].description;
+const finalUser = getState(user);
+food.textContent = finalUser.food;
+energy.textContent = finalUser.energy;
+
+if (isDead(finalUser)) {
+    results.textContent = 'You died!';
 }
-
-if (user.food >= 220) {
-    resultString = resultString + ' ' + food[0].description;
-} else if (user.food < 150 && user.food > 70) {
-    resultString = resultString + ' ' + food[1].description;
-} else {
-    resultString = resultString + ' ' + food[2].description;
+if (hasCompletedAllLocations(landmark, finalUser)) {
+    results.textContent = 'You won!... no really how\'d you do that?';
 }
-results.textContent = resultString;
-
-///addStuff(200, 30, 40);///////temporary for test purposes
 
 restart.addEventListener('click', () => {
     window.location.replace('../index.html');
 });
-
-
-
-
-
-
-
