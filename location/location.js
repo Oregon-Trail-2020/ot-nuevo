@@ -52,6 +52,7 @@ button.addEventListener('click', () => {
     }
     if (userPick === 3) {
         // display result div
+        console.log(landmark[landmarkSubArray].choices[2].energy);
         resultDescription.textContent = landmark[landmarkSubArray].choices[2].result;
         addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food);
     }
@@ -64,9 +65,10 @@ button.addEventListener('click', () => {
         addStuff(landmark[landmarkSubArray].choices[4].energy, landmark[landmarkSubArray].choices[4].food);
     }
 
+    const newUser = getState('USER');
      // setting user completed function - scoreLocation <--- this sets to completed [true]
-    scoreLocation(landmark[landmarkSubArray].id, user);
-    saveState(USER, user);
+    scoreLocation(landmark[landmarkSubArray].id, newUser);
+    saveState(USER, newUser);
  
 
     // set timeout 

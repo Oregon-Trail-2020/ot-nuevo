@@ -9,6 +9,8 @@ import isDead from '../utils/is-dead.js';
 const user = 'USER';
 
 const changeLocation = getState(user);
+const searchParams = new URLSearchParams(window.location.search);
+let landmarkSubArray = Number(searchParams.get('id'));
 // if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
 //     // send them to the results page
 //     window.location = '../results/results.html';
@@ -42,13 +44,6 @@ for (let i = 0; i < landmark.length; i++) {
 const button = document.getElementById('space-bar');
 
 button.addEventListener('click', () => {
-
-    if (!user) {
-        // If no travel has happened user goes back to home:
-        window.location = './';
-    } else {
         // If travel has happened user goes back to choice page:
-        window.location.href = '../location/location.html';
-    }
-    
+    window.location.href = `../location/location.html?id=${landmarkSubArray}`;
 });
