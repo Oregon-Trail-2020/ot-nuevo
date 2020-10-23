@@ -20,22 +20,22 @@ export const landmark = [
             }, {
 
                 id: 'diego1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: 0,
-                food: -20,
+                description: 'Catch some waves and surf in La Jolla',
+                result: `You didn't have the experience to surf in La Jolla and injured yourself`,
+                energy: -100,
+                food: 0,
                 weather: 'hot',
             }, {
                 id: 'diego2',
-                description: 'Some option 2',
-                result: `Some result 2`,
-                energy: -20,
-                food: -20,
+                description: 'Check out the USS Midway Museum',
+                result: `You had lots of chances to get involved, testing simulators, climbing into cockpits and watching films documenting the dramatic events that took place where you stood`,
+                energy: -10,
+                food: -5,
 
             }, {
                 id: 'diego3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Check out The San Diego Zoo',
+                result: `The San Diego Zoo is rated among the best in the world and houses more than 650 species.! You saw a lot of animal but you ate a lot our snacks while visiting.`,
                 energy: -20,
                 food: -20,
             }]
@@ -61,21 +61,22 @@ export const landmark = [
             },
             {
                 id: 'la1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Go on a hike with new friends you met in Runyon canyon Park',
+                result: `The hike was fun and views were beautiful but the air quality was bad today`,
+                energy: 10,
+                food: -30,
             }, {
                 id: 'la2',
-                description: 'Some option 2',
-                result: `Some result 2`,
+                description: 'Spend the night in LA and hit the social scene',
+                result: `You had a great time but you ate alot your travel snacks after the club`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'la3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Go shopping ',
+                result: `You found some really great stuff to wear on your trip, but you spent hour in the dressing rooms`,
                 energy: 0,
+                food: 0
             }]
     }, {
 
@@ -113,7 +114,7 @@ export const landmark = [
                 id: 'grapevine3',
                 description: 'Go Pyramid Lake ',
                 result: `This detour cost you a couple of days, but it was worth it. You get jet ski's, paddle boats, and soak up the sun while you take in the lake's scenic beauty.`,
-                energy: 5,
+                energy: +5,
                 food: -35
 
             }]
@@ -139,21 +140,22 @@ export const landmark = [
             },
             {
                 id: 'bigSur1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Stop and take the Bird Island Trail ',
+                result: `You were taken to a cove that seems like it isn't even real. The water color is spectacular and the sand looks so soft and the Sea Lions are just laying there sun bathing`,
+                energy: +30,
+                food: 0,
             }, {
                 id: 'bigSur2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Stay at a campground near the beach',
+                result: `The seals found your food`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'bigSur3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Continue to drive through and take in the scenery',
+                result: `You got into an accident looking at the scenery and not the road`,
+                energy: -100,
+                food: 0
             }]
     }, {
 
@@ -358,7 +360,7 @@ export const landmark = [
             top: '25%',
             left: '11%'
         },
-        description: 'Home to the world-famous Oregon Shakespeare Festival and ranked in the top 10 of “The 100 Best Small Art Towns in America,” Ashland is a cultural hot spot, with award-winning galleries, theaters and restaurants bursting from its seams. Nestled at the base of the Siskiyou and Cascade mountain ranges, Ashland has a reputation for great outdoor recreation in the city limits and beyond. And with the famous Mt. Ashland Ski Area nearby, fun stays in Ashland year-round.',
+        description: 'Eugene is a city in Oregon, on the Willamette River. The University of Oregon is home to the Northwest-focused Museum of Natural and Cultural History and the Jordan Schnitzer Museum of Art, known for its Asian collections.',
         choices: [
             {
                 id: 'map',
@@ -370,30 +372,32 @@ export const landmark = [
             },
             {
                 id: 'eugene1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Scavenger Hunt',
+                result: `You join a group of barefooted locals to wander around downtown for a photo scavenger hunt while walking around trying to find the next obstacle; you end up making a wrong turn and land at a hookah lounge. You get talked into scraping the scavenger hunt to smoke some shisha instead. You lose 3 hours.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'eugene2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Willamette Valley Cheese',
+                result: `At a rest stop, you saw a flyer for the Willamette Valley Cheese Festival. The score, that's happening today! You may have said screw my lactose allergy, but your gut said screw you! You spend the rest of the evening stuck in a porta-potty regretting your decision.`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'eugene3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Explore Oregon University',
+                result: `While walking around the University, a group of college students runs past streaking and yelling GO Ducks! You only live once, so you decide to join them. You get arrested by campus security and lose two days trying to prove that you are not a student.`,
+                energy: -10,
+                food: -30
             }]
     }, {
 
         id: 'salem',
         title: 'Salem',
         image: 'salem.png',
-        nextLandmark: 'Woodburn',
+        nextLandmark: 'Portland',
         map: {
             top: '20%',
+            left: '13%'
         },
         description: 'Salem is the capital city of Oregon. Set amid a park with gardens, the domed Oregon State Capitol contains a collection of art by Oregon artists. The Hallie Ford Museum of Art includes works by Pacific Northwest and Native American artists.',
         choices: [
@@ -407,59 +411,22 @@ export const landmark = [
             },
             {
                 id: 'salem1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Hike Spencer Butte',
+                result: `While visiting this iconic trail, you hike to the top and take in the breathtaking few, but you lose your balance and slip off the edge in the process. You lose 3 days waiting for search and rescue to find you.`,
+                energy: -60,
+                food: -40,
             }, {
                 id: 'salem2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
-                food: -20,
+                description: 'Bush’s pasture Park',
+                result: `While walking around the 90-acre public park, you notice a homeless person sleeping. You give them 20 dollars, most of your food, and wish them well.`,
+                energy: 15,
+                food: -10,
             }, {
                 id: 'salem3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Local Entertainment',
+                result: `Your car overheats just outside Salem, and you hitch a ride to the shop with the tow-truck. The mechanic says it'll take a day to get it fixed but kindly offers you free tickets to the local opera house. Oprea is not really your thing, but with nothing else to do, you decide to give it a try.`,
                 energy: 0,
-            }]
-    }, {
-
-        id: 'woodburn',
-        title: 'Woodburn',
-        image: 'woodburn.png',
-        nextLandmark: 'Portland',
-        map: {
-            top: '15%',
-            left: '17%'
-        },
-        description: 'Woodburn is a city in Marion County, Oregon, United States. Incorporated in 1889, the community had been platted in 1871 after the arrival of the railroad. The city is located in the northern end of the Willamette Valley between Portland and Salem.',
-        choices: [
-            {
-                id: 'map',
-                description: 'Check out the map'
-
-            }, {
-                id: 'inventory',
-                description: 'Check inventory'
-            },
-            {
-                id: 'woodburn1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
-            }, {
-                id: 'woodburn2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
-                food: -20,
-            }, {
-                id: 'woodburn3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                food: 20
             }]
     }, {
 
