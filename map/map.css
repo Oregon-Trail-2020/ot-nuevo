@@ -18,11 +18,14 @@ li, .landmark {
     font-size: .9em;
 }
 
-.landmark.completed {
-    color: rgb(53, 92, 220);
-    font-size: .1em;
+li, .landmark.completed:after {
+    content: ' ✔';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.landmark.completed:after {
-    content: ' ✔';
+.completed-loctions {
+    margin-left: 30px;
 }

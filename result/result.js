@@ -9,6 +9,7 @@ const restart = document.getElementById('restart');
 const food = document.getElementById('foodDiv');
 const energy = document.getElementById('energyDiv');
 const results = document.getElementById('result');
+const audio = document.getElementById('my_audio');
 
 const finalUser = getState(user);
 food.textContent = finalUser.food;
@@ -20,6 +21,10 @@ if (isDead(finalUser)) {
 if (hasCompletedAllLocations(landmark, finalUser)) {
     results.textContent = 'You won!... no really how\'d you do that?';
 }
+
+window.onload = function() {
+    audio.play();
+};
 
 restart.addEventListener('click', () => {
     window.location.replace('../index.html');
