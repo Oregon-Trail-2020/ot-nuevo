@@ -1,6 +1,10 @@
 body {
     background-image: url(../assets/home/NUEVO.png);
     background-repeat: no-repeat;
+    max-width: 1000px;
+    /* margin: 0 auto;
+    height: auto;
+    width: auto; */
 }
 main {
     margin-top: 370px;
