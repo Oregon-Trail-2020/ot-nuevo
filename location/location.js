@@ -74,24 +74,18 @@ button.addEventListener('click', () => {
         if (isDead(user)) {
             return window.location.href = '../result/result.html';
         }
+        // if statement if user dies or completes the game that take user to results
         if (hasCompletedAllLocations(landmark, user)) {
             return window.location.href = '../result/result.html';
         }
+        // else statement direct to next location  
         window.location.href = `../location/location.html?id=${nextLandmark}`;
     }, 5000);  
     
    
     
-        // if statement if user dies or completes the game that take user to results
-        // else statement direct to next location     
+        
+           
 
 
 });
-    // One through 2 link to a new page
-    // three and five affect state and show a results div
-        // The search param grabs the result from the data array and displays the result
-        // The search param changes state and state view
-            //  Change complete to true and add check to map
-            // check if allChecked or dead and send to results page
-        // setTimeOut lets the user read result before sending them to the next location
-            // The search params moves user to the next location
