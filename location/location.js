@@ -91,5 +91,5 @@ button.addEventListener('click', () => {
         }
         // else statement direct to next location  
         window.location.href = `../location/location.html?id=${nextLandmark}`;
-    }, 9000);
+    }, 1200);
 });
