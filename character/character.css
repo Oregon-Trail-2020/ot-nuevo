@@ -1,0 +1,15 @@
+/* header {
+    background-image: url(../assets/ot-banner.png);
+    background-repeat: no-repeat;
+    max-width: 100px;
+} */
+
+.welcome-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.instruction-div {
+    font-size: 2rem;
+}
