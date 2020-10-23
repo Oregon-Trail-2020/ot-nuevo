@@ -1,5 +1,5 @@
-const button = document.getElementById('space-bar');
+const button = document.getElementById('back-to-home');
 
 button.addEventListener('click', () => {
-    window.location.href = '/';
+    window.location.href = '../index.html';
 });
