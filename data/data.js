@@ -233,6 +233,7 @@ export const landmark = [
                 description: 'Napa Valley Wine Train',
                 result: `The three-hour tour includes the option of a multi-course lunch or dinner, as well as a private tour of one or two esteemed wineries, such as Grgich Hills and Domaine Chandon. However, you had too much to drink and have to recover`,
                 energy: 0,
+                food: 0,
             }]
     }, {
 
@@ -349,6 +350,7 @@ export const landmark = [
                 description: 'Visit Grizzly Peak',
                 result: `Walking down the mountain trail, you take in the views of Bear Creek Valley. Suddenly you notice a bear coming at you. Panicking, you climb up the nearest tree and get stuck there till the next morning.`,
                 energy: 0,
+                food: 0,
             }]
     }, {
 
