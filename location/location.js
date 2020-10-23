@@ -22,8 +22,8 @@ const landmarkSubArray = searchParams.get('id');
 let nextLandmark = Number(landmarkSubArray) + 1;
     //Use that data array to display the image description and choices 
 
-image.src = '../assets/' + landmark[landmarkSubArray].image;
-console.log(image.src = '../assets/location/' + landmark[landmarkSubArray].image);
+
+image.src = '../assets/location/' + landmark[landmarkSubArray].image;
 landmarkDescription.textContent = landmark[landmarkSubArray].description;
 
 function createChoice(choice) {
@@ -31,7 +31,18 @@ function createChoice(choice) {
     li.textContent = choice.description;
     return li;
 }
-
+// if there are no choices then we are going to first add complete via allCompleted()
+// navigate to results page
+if (landmark[landmarkSubArray].choices === undefined || landmark[landmarkSubArray].choices === null) {
+    updateView();
+    const newUser = getState('USER');
+    getState(newUser);
+    hasCompletedAllLocations(landmark, newUser); 
+    setTimeout(() => {
+        return window.location.href = '../result/result.html';
+    
+    }, 9000);
+}
 for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
     let choice = landmark[landmarkSubArray].choices[i];
     const li = createChoice(choice);
