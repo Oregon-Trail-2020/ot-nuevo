@@ -28,7 +28,7 @@ export const landmark = [
             }, {
                 id: 'diego2',
                 description: 'Some option 2',
-                result: `Some result 1`,
+                result: `Some result 2`,
                 energy: -20,
                 food: -20,
 
@@ -68,7 +68,7 @@ export const landmark = [
             }, {
                 id: 'la2',
                 description: 'Some option 2',
-                result: `Some result 1`,
+                result: `Some result 2`,
                 energy: -3,
                 food: -20,
             }, {
@@ -87,7 +87,7 @@ export const landmark = [
             top: '80%',
             left: '14%'
         },
-        description: 'Hi there dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+        description: 'The Grapevive. Hi there dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         choices: [
             {
                 id: 'map',

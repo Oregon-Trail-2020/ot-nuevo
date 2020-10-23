@@ -21,7 +21,7 @@ const user = getState('USER');
 console.log(user);
 const searchParams = new URLSearchParams(window.location.search);
 const landmarkSubArray = searchParams.get('id');
-let nextLandmark = Number(landmarkSubArray + 1);
+let nextLandmark = Number(landmarkSubArray) + 1;
     //Use that data array to display the image description and choices 
 
 // image.src = '../assets' + landmark[landmarkSubArray].image;
@@ -47,12 +47,11 @@ button.addEventListener('click', () => {
     const userPick = Number(userInput.value);
 
 
-  
     if (userPick === 1) {
-        window.location.href = '../map/map.html';
+        window.location.href = `../map/map.html?id=${landmarkSubArray}`;
     }
     if (userPick === 2) {
-        window.location.href = '../store/supply-store.html';
+        window.location.href = `../store/supply-store.html?id=${landmarkSubArray}`;
     }
     if (userPick === 3) {
         resultDescription.textContent = landmark[landmarkSubArray].choices[2].result;
@@ -76,10 +75,10 @@ button.addEventListener('click', () => {
     // set timeout 
     setTimeout(() => {
         if (isDead(user)) {
-            window.location.href = '../result/result.html';
+            return window.location.href = '../result/result.html';
         }
         if (hasCompletedAllLocations(landmark, user)) {
-            window.location.href = '../result/result.html';
+            return window.location.href = '../result/result.html';
         }
         window.location.href = `../location/location.html?id=${nextLandmark}`;
     }, 5000);  
