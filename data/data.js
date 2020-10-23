@@ -20,22 +20,22 @@ export const landmark = [
             }, {
 
                 id: 'diego1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: 0,
-                food: -20,
+                description: 'Catch some waves and surf in La Jolla',
+                result: `You didn't have the experience to surf in La Jolla and injured yourself`,
+                energy: -100,
+                food: 0,
                 weather: 'hot',
             }, {
                 id: 'diego2',
-                description: 'Some option 2',
-                result: `Some result 2`,
-                energy: -20,
-                food: -20,
+                description: 'Check out the USS Midway Museum',
+                result: `You had lots of chances to get involved, testing simulators, climbing into cockpits and watching films documenting the dramatic events that took place where you stood`,
+                energy: -10,
+                food: -5,
 
             }, {
                 id: 'diego3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Check out The San Diego Zoo',
+                result: `The San Diego Zoo is rated among the best in the world and houses more than 650 species.! You saw a lot of animal but you ate a lot our snacks while visiting.`,
                 energy: -20,
                 food: -20,
             }]
@@ -61,21 +61,22 @@ export const landmark = [
             },
             {
                 id: 'la1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Go on a hike with new friends you met in Runyon canyon Park',
+                result: `The hike was fun and views were beautiful but the air quality was bad today`,
+                energy: 10,
+                food: -30,
             }, {
                 id: 'la2',
-                description: 'Some option 2',
-                result: `Some result 2`,
+                description: 'Spend the night in LA and hit the social scene',
+                result: `You had a great time but you ate alot your travel snacks after the club`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'la3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Go shopping ',
+                result: `You found some really great stuff to wear on your trip, but you spent hour in the dressing rooms`,
                 energy: 0,
+                food: 0
             }]
     }, {
 
@@ -99,21 +100,23 @@ export const landmark = [
             },
             {
                 id: 'grapevine1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
+                description: 'Stop at a gas station.',
+                result: `Buy a gas station hot dog spend the rest of the day in the bathroom.`,
+                energy: +10,
                 food: -20,
             }, {
                 id: 'grapevine2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Speed down I5',
+                result: `With the wind in your hair and Bon Jovi blaring, you fail to notice the cop who pulls you over for driving 90mph. You spend the night in jail and have to post bail to get out.`,
                 energy: -3,
-                food: -20,
+                food: 0,
             }, {
                 id: 'grapevine3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Go Pyramid Lake ',
+                result: `This detour cost you a couple of days, but it was worth it. You get jet ski's, paddle boats, and soak up the sun while you take in the lake's scenic beauty.`,
+                energy: +5,
+                food: -35
+
             }]
     }, {
 
@@ -137,21 +140,22 @@ export const landmark = [
             },
             {
                 id: 'bigSur1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Stop and take the Bird Island Trail ',
+                result: `You were taken to a cove that seems like it isn't even real. The water color is spectacular and the sand looks so soft and the Sea Lions are just laying there sun bathing`,
+                energy: +30,
+                food: 0,
             }, {
                 id: 'bigSur2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Stay at a campground near the beach',
+                result: `The seals found your food`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'bigSur3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Continue to drive through and take in the scenery',
+                result: `You got into an accident looking at the scenery and not the road`,
+                energy: -100,
+                food: 0
             }]
     }, {
 
@@ -174,22 +178,23 @@ export const landmark = [
                 description: 'Check inventory'
             },
             {
-                id: 'la1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                id: 'sf1',
+                description: 'Head to downtown.',
+                result: `You failed to check for local activities before heading downtown, and unknowing got swept up in gay pride festivities. Twenty-four-hours later, you wake up with a wicked hangover and only one shoe.`,
+                energy: -20,
+                food: -25,
             }, {
-                id: 'la2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                id: 'sf2',
+                description: 'Checkout Chinatown',
+                result: `You arrive at the tea rooms and mah jong parlors of Chinatown one of the funnest places, the lingering hippie chic of Haight-Ashbury. You decide to stay and but leave hungry and tired from the sleepy time tea.`,
                 energy: -3,
                 food: -20,
             }, {
-                id: 'la3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                id: 'sf3',
+                description: 'Visit Ghirardelli Square.',
+                result: `After hitting up several stores, you stumble into the Ghirardelli chocolate shop, where you gorge yourself on far too much sugar.`,
+                energy: 5,
+                food: 20
             }]
     }, {
 
@@ -213,20 +218,20 @@ export const landmark = [
             },
             {
                 id: 'napa1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Take an Aloft Balloon Rides over wine country',
+                result: `The balloons gently rise 1,000 to 2,000 feet and float over some of Napa Valley's most famous vineyards, including Robert Mondavi and Domaine Chandon; on clear winter mornings the sight lines go all the way to the snowcapped Sierra Nevadas. After landing, the tour ends with breakfast and a glass of sparkling wine. You are feeling refreshed`,
                 energy: +20,
-                food: -20,
+                food: 0,
             }, {
                 id: 'napa2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Visit Culinary Institute of America at Greystone',
+                result: `Serious seekers of culinary and wine knowledge have flocked to this Napa Valley campus since 1995. The roster of food and wine courses here is formidable, ranging from one-day, hands-on cooking demonstrations—in artisanal bread-baking, say, or the flavors of Asia—to months-long professional certification programs for ambitious chefs and wine experts. You are not a food and wine expert`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'napa3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Napa Valley Wine Train',
+                result: `The three-hour tour includes the option of a multi-course lunch or dinner, as well as a private tour of one or two esteemed wineries, such as Grgich Hills and Domaine Chandon. However, you had too much to drink and have to recover`,
                 energy: 0,
             }]
     }, {
@@ -251,21 +256,22 @@ export const landmark = [
             },
             {
                 id: 'shasta1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Go hiking up Shasta',
+                result: `Walking on the trail you hear a noise above you. You look up to see a UFO. The space ship abducts you and you loose a week. Not remembering your name.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'shasta2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
+                description: 'Go to a weed farm!',
+                result: `At the weed farm you eat to much edibles and pass out for a few hours and wake up with the munchies.`,
+                energy: -25,
                 food: -20,
             }, {
                 id: 'shasta3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Hit up a waterfall',
+                result: `You get lost en route to Whiskeytown National Forest and end up in the heart of Redding, Ca. You see a group of people and stop to ask for directions. They invite you inside. You follow but quickly regret the decision when you realize you have been sucked into a charismatic megachurch twilight-zone. You lose 6 hours trying to politely excuse yourself from a prayer circle. `,
+                energy: -20,
+                food: -3,
             }]
     }, {
 
@@ -289,21 +295,22 @@ export const landmark = [
             },
             {
                 id: 'weed1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Alpaca on the Rocks',
+                result: `You discover a local farm store and get to meet alpacas, mini horses, and donkeys! You get caught up by your love of mini horses and lose 3 hours.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'weed2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Find the WEED',
+                result: `Living up to the town name, you decide too to try to find some weed. You end up looking all night, but all the shops are closed. You leave disappointed and empty-handed.`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'weed3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Go white water rafting',
+                result: `Head out on the Klamath River and loose every thing in the white water rapids.`,
                 energy: 0,
+                food: 0,
             }]
     }, {
 
@@ -327,20 +334,20 @@ export const landmark = [
             },
             {
                 id: 'ashland1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Wolf Creek Tavern',
+                result: `There is no way you can pass the Wolf Creek Tavern from your favorite show, Ghost Adventures, without stopping. You walk to see if the place lives up to your expectations; seconds later, you run out shaking in terror with soiled pants.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'ashland2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Oregon Shakespeare Festival',
+                result: `You can't drive through Ashland and not hit up the theatre. You get to the box office and snag your tickets to a modern adaptation of Hamlet. Little did you realize you picked the LONGEST Shakespearian play. Five hours later, you crawl starving to the nearest brewery.`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'ashland3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Visit Grizzly Peak',
+                result: `Walking down the mountain trail, you take in the views of Bear Creek Valley. Suddenly you notice a bear coming at you. Panicking, you climb up the nearest tree and get stuck there till the next morning.`,
                 energy: 0,
             }]
     }, {
@@ -353,7 +360,7 @@ export const landmark = [
             top: '25%',
             left: '11%'
         },
-        description: 'Home to the world-famous Oregon Shakespeare Festival and ranked in the top 10 of “The 100 Best Small Art Towns in America,” Ashland is a cultural hot spot, with award-winning galleries, theaters and restaurants bursting from its seams. Nestled at the base of the Siskiyou and Cascade mountain ranges, Ashland has a reputation for great outdoor recreation in the city limits and beyond. And with the famous Mt. Ashland Ski Area nearby, fun stays in Ashland year-round.',
+        description: 'Eugene is a city in Oregon, on the Willamette River. The University of Oregon is home to the Northwest-focused Museum of Natural and Cultural History and the Jordan Schnitzer Museum of Art, known for its Asian collections.',
         choices: [
             {
                 id: 'map',
@@ -365,30 +372,32 @@ export const landmark = [
             },
             {
                 id: 'eugene1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Scavenger Hunt',
+                result: `You join a group of barefooted locals to wander around downtown for a photo scavenger hunt while walking around trying to find the next obstacle; you end up making a wrong turn and land at a hookah lounge. You get talked into scraping the scavenger hunt to smoke some shisha instead. You lose 3 hours.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'eugene2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Willamette Valley Cheese',
+                result: `At a rest stop, you saw a flyer for the Willamette Valley Cheese Festival. The score, that's happening today! You may have said screw my lactose allergy, but your gut said screw you! You spend the rest of the evening stuck in a porta-potty regretting your decision.`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'eugene3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Explore Oregon University',
+                result: `While walking around the University, a group of college students runs past streaking and yelling GO Ducks! You only live once, so you decide to join them. You get arrested by campus security and lose two days trying to prove that you are not a student.`,
+                energy: -10,
+                food: -30
             }]
     }, {
 
         id: 'salem',
         title: 'Salem',
         image: 'salem.png',
-        nextLandmark: 'Woodburn',
+        nextLandmark: 'Portland',
         map: {
             top: '20%',
+            left: '13%'
         },
         description: 'Salem is the capital city of Oregon. Set amid a park with gardens, the domed Oregon State Capitol contains a collection of art by Oregon artists. The Hallie Ford Museum of Art includes works by Pacific Northwest and Native American artists.',
         choices: [
@@ -402,59 +411,22 @@ export const landmark = [
             },
             {
                 id: 'salem1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                description: 'Hike Spencer Butte',
+                result: `While visiting this iconic trail, you hike to the top and take in the breathtaking few, but you lose your balance and slip off the edge in the process. You lose 3 days waiting for search and rescue to find you.`,
+                energy: -60,
+                food: -40,
             }, {
                 id: 'salem2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
-                food: -20,
+                description: 'Bush’s pasture Park',
+                result: `While walking around the 90-acre public park, you notice a homeless person sleeping. You give them 20 dollars, most of your food, and wish them well.`,
+                energy: 15,
+                food: -10,
             }, {
                 id: 'salem3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Local Entertainment',
+                result: `Your car overheats just outside Salem, and you hitch a ride to the shop with the tow-truck. The mechanic says it'll take a day to get it fixed but kindly offers you free tickets to the local opera house. Oprea is not really your thing, but with nothing else to do, you decide to give it a try.`,
                 energy: 0,
-            }]
-    }, {
-
-        id: 'woodburn',
-        title: 'Woodburn',
-        image: 'woodburn.png',
-        nextLandmark: 'Portland',
-        map: {
-            top: '15%',
-            left: '17%'
-        },
-        description: 'Woodburn is a city in Marion County, Oregon, United States. Incorporated in 1889, the community had been platted in 1871 after the arrival of the railroad. The city is located in the northern end of the Willamette Valley between Portland and Salem.',
-        choices: [
-            {
-                id: 'map',
-                description: 'Check out the map'
-
-            }, {
-                id: 'inventory',
-                description: 'Check inventory'
-            },
-            {
-                id: 'woodburn1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
-            }, {
-                id: 'woodburn2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
-                food: -20,
-            }, {
-                id: 'woodburn3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                food: 20
             }]
     }, {
 
