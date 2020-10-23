@@ -31,6 +31,7 @@ _Questions or comments can be directed to [Jeff Irvine ](jirvine1212@gmail.com),
 * _HTML_
 * _JavaScript_
 * _CSS_
+* _JSON_
 
 ### License
 
