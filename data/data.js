@@ -233,7 +233,6 @@ export const landmark = [
                 description: 'Napa Valley Wine Train',
                 result: `The three-hour tour includes the option of a multi-course lunch or dinner, as well as a private tour of one or two esteemed wineries, such as Grgich Hills and Domaine Chandon. However, you had too much to drink and have to recover`,
                 energy: 0,
-                food: 0,
             }]
     }, {
 
@@ -350,7 +349,6 @@ export const landmark = [
                 description: 'Visit Grizzly Peak',
                 result: `Walking down the mountain trail, you take in the views of Bear Creek Valley. Suddenly you notice a bear coming at you. Panicking, you climb up the nearest tree and get stuck there till the next morning.`,
                 energy: 0,
-                food: 0,
             }]
     }, {
 
@@ -431,6 +429,7 @@ export const landmark = [
                 food: 20
             }]
     }, {
+        
 
         id: 'portland',
         title: 'Portland',
@@ -439,6 +438,6 @@ export const landmark = [
             top: '12%',
             left: '18%'
         },
-        description: 'CONGRATULATIONS!!! You made it to Portland! You could do so many amazing things, but you get sucked into the hype and head to Vododoo Doughnuts. While waiting in line, it starts to rain. You decide to stick it out, and 2 hours later, you are soaked but get to enjoy your or a sub-par but an anatomically shaped doughnut.',
+        description: 'Portland, Oregon’s largest city, sits on the Columbia and Willamette rivers, in the shadow of snow-capped Mount Hood. It’s known for its parks, bridges and bicycle paths, as well as for its eco-friendliness and its microbreweries and coffeehouses. Iconic Washington Park encompasses sites from the formal Japanese Garden to Oregon Zoo and its railway. The city hosts thriving art, theater and music scenes',
 
     }];
