@@ -23,7 +23,6 @@ if (hasCompletedAllLocations(landmark, finalUser)) {
 }
 
 window.onload = function() {
-    // document.getElementById(audio).play();
     audio.play();
 };
 

@@ -17,13 +17,13 @@ const userInput = document.getElementById('user-input');
 updateView();
 const USER = 'USER';
     // grab the search params and use them to get the location from the data array
-const user = getState('USER');
 const searchParams = new URLSearchParams(window.location.search);
 const landmarkSubArray = searchParams.get('id');
 let nextLandmark = Number(landmarkSubArray) + 1;
     //Use that data array to display the image description and choices 
 
-image.src = '../assets' + landmark[landmarkSubArray].image;
+image.src = '../assets/' + landmark[landmarkSubArray].image;
+console.log(image.src = '../assets/location/' + landmark[landmarkSubArray].image);
 landmarkDescription.textContent = landmark[landmarkSubArray].description;
 
 function createChoice(choice) {

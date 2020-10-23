@@ -20,7 +20,7 @@ export const landmark = [
             }, {
 
                 id: 'diego1',
-                description: 'Catch some waves and surf in La Jolla',
+                description: 'Catch some waves in La Jolla',
                 result: `You didn't have the experience to surf in La Jolla and injured yourself`,
                 energy: -100,
                 food: 0,
@@ -68,13 +68,13 @@ export const landmark = [
             }, {
                 id: 'la2',
                 description: 'Spend the night in LA and hit the social scene',
-                result: `You had a great time but you ate alot your travel snacks after the club`,
+                result: `You had a great time but you ate a lot your travel snacks after the club`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'la3',
                 description: 'Go shopping ',
-                result: `You found some really great stuff to wear on your trip, but you spent hour in the dressing rooms`,
+                result: `You found some really great stuff to wear on your trip, but you spent over an hour in the dressing rooms`,
                 energy: 0,
                 food: 0
             }]
@@ -82,13 +82,13 @@ export const landmark = [
 
         id: 'grapevine',
         title: 'Grapevine',
-        image: 'grapevine.png',
+        image: 'grape-vine.png',
         nextLandmark: 'Big Sur',
         map: {
             top: '80%',
             left: '14%'
         },
-        description: 'Grapevine is an unincorporated community in Kern County, California, at the southern end of the San Joaquin Valley. The small village is directly adjacent to Interstate 5 and consists mainly of travelers and roadside services. At an elevation of 1,499 feet (457 m), the community is located at the foot of a grade known as The Grapevine that starts at the mouth of Grapevine Canyon, immediately south of the community, and ascends the canyon to the Tejon Pass, which separates the Tehachapi Mountains from the San Emigdio Mountains via Interstate 5 (formerly U.S. Route 99).',
+        description: 'The Grapevine is an unincorporated community in Kern County, California, at the southern end of the San Joaquin Valley. The small village is directly adjacent to Interstate 5 and consists mainly of travelers and roadside services. At an elevation of 1,499 feet (457 m), the community is located at the foot of a grade known as The Grapevine that starts at the mouth of Grapevine Canyon, immediately south of the community, and ascends the canyon to the Tejon Pass, which separates the Tehachapi Mountains from the San Emigdio Mountains via Interstate 5 (formerly U.S. Route 99).',
         choices: [
             {
                 id: 'map',
@@ -101,14 +101,14 @@ export const landmark = [
             {
                 id: 'grapevine1',
                 description: 'Stop at a gas station.',
-                result: `Buy a gas station hot dog spend the rest of the day in the bathroom.`,
-                energy: +10,
-                food: -20,
+                result: `You buy a gas station hot dog, and spend the rest of the day in the bathroom...`,
+                energy: -10,
+                food: +10,
             }, {
                 id: 'grapevine2',
                 description: 'Speed down I5',
                 result: `With the wind in your hair and Bon Jovi blaring, you fail to notice the cop who pulls you over for driving 90mph. You spend the night in jail and have to post bail to get out.`,
-                energy: -3,
+                energy: -10,
                 food: 0,
             }, {
                 id: 'grapevine3',
@@ -186,7 +186,7 @@ export const landmark = [
             }, {
                 id: 'sf2',
                 description: 'Checkout Chinatown',
-                result: `You arrive at the tea rooms and mah jong parlors of Chinatown one of the funnest places, the lingering hippie chic of Haight-Ashbury. You decide to stay and but leave hungry and tired from the sleepy time tea.`,
+                result: `You arrive at the tea rooms and mah jong parlors of Chinatown one of the funnest places, the lingering hippie chic of Haight-Ashbury. You decide to stay for a while, but leave hungry and tired from the sleepy time tea.`,
                 energy: -3,
                 food: -20,
             }, {
