@@ -13,7 +13,7 @@ body {
     background-color: black;
     color: white;
     font-size: 1.5rem;
-    width: 900px;
+    max-width: 900px;
 }
 
 main {
@@ -22,7 +22,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
 }
 
 content {
