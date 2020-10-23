@@ -1,12 +1,14 @@
 # _OT Nuevo_
 
-#### _BRIEF DESCRIPTION OF APPLICATION, OCTOBER 2020_
 
-#### By _**Jeff, Jillian Gibson, Rosalie, Sarah**_
+
+#### A modern version of The Oregon Trail, 10-23-2020
+
+#### By _**Jeff Irvine, Jillian Gibson, Rosalie Lee, Sarah Skillen**_
 
 ## Description
 
-_This HTML demonstrates the fundamental understanding of...._
+_In Oregon Trail Nuevo the player assumes the role of a driver relocating and is faced with a series of choice as they relocate from San Diego, California to Portland, Oregon._
 
 ## Setup/Installation Requirements
 
@@ -22,15 +24,16 @@ _No known bugs._
 
 ## Support and contact details
 
-_Questions or comments can be directed to [Jeff ](@gmail.com), [Jillian Gibson](@gmail.com),[Rosalie](@gmail.com), [Sarah](@gmail.com)._
+_Questions or comments can be directed to [Jeff Irvine ](jirvine1212@gmail.com), [Jillian Gibson](jillian.l.gibson@gmail.com),[Rosalie Lee](rosalie337@gmail.com), [Sarah Skillen](kjskillen@gmail.com)._
 
 ## Technologies Used
 
 * _HTML_
 * _JavaScript_
+* _CSS_
 
 ### License
 
 *_This software operates under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license._*
 
-Copyright (c) 2020 **_Jeff, Jillian Gibson, Rosalie, Sarah_**
+Copyright (c) 2020 **_Jeff Irvine, Jillian Gibson, Rosalie Lee, Sarah Skillen_**
