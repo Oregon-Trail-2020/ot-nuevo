@@ -1,5 +1,3 @@
-import { getState } from '../utils/local-storage.js';
-import { addStuff } from '../utils/add.js';
 
 const restart = document.getElementById('restart');
 
@@ -78,10 +76,8 @@ results.textContent = resultString;
 
 ///addStuff(200, 30, 40);///////temporary for test purposes
 
-console.log(restart);
 restart.addEventListener('click', () => {
     window.location.replace('../index.html');
-    console.log('hello');
 });
 
 
