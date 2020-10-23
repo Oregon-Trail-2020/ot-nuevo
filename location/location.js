@@ -63,29 +63,22 @@ button.addEventListener('click', () => {
         resultDescription.textContent = landmark[landmarkSubArray].choices[4].result;
         addStuff(landmark[landmarkSubArray].choices[4].energy, landmark[landmarkSubArray].choices[4].food);
     }
-
+    updateView();
+    const newUser = getState('USER');
      // setting user completed function - scoreLocation <--- this sets to completed [true]
-    scoreLocation(landmark[landmarkSubArray].id, user);
-    saveState(USER, user);
- 
+    scoreLocation(landmark[landmarkSubArray].id, newUser);
+    saveState(USER, newUser);
 
     // set timeout 
     setTimeout(() => {
-        if (isDead(user)) {
+        if (isDead(newUser)) {
             return window.location.href = '../result/result.html';
         }
-        // if statement if user dies or completes the game that take user to results
-        if (hasCompletedAllLocations(landmark, user)) {
+        // if statement if user dies or completes the game then take user to results
+        if (hasCompletedAllLocations(landmark, newUser)) {
             return window.location.href = '../result/result.html';
         }
         // else statement direct to next location  
         window.location.href = `../location/location.html?id=${nextLandmark}`;
-    }, 5000);  
-    
-   
-    
-        
-           
-
-
+    }, 9000);
 });

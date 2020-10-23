@@ -1,14 +1,14 @@
 
 import { landmark } from '../data/data.js';
 import checkCompleted from './map-check-completed.js';
-import { hasCompletedAllLocations } from './map-all-completed.js';
 import { getState } from '../utils/local-storage.js';
-import isDead from '../utils/is-dead.js';
 
 // console.log(landmark);
 const user = 'USER';
 
 const changeLocation = getState(user);
+const searchParams = new URLSearchParams(window.location.search);
+let landmarkSubArray = Number(searchParams.get('id'));
 // if (isDead(user) || hasCompletedAllLocations(landmark, user)) {
 //     // send them to the results page
 //     window.location = '../results/results.html';
@@ -31,7 +31,6 @@ for (let i = 0; i < landmark.length; i++) {
     if (changeLocation.complete[location.id]) {
         // make a completed location display (with a checkmark)
         li = checkCompleted(location);
-        console.log('does this work');
     } else {
         li.textContent = landmark[i].title; 
     }
@@ -42,13 +41,6 @@ for (let i = 0; i < landmark.length; i++) {
 const button = document.getElementById('space-bar');
 
 button.addEventListener('click', () => {
-
-    if (!user) {
-        // If no travel has happened user goes back to home:
-        window.location = './';
-    } else {
         // If travel has happened user goes back to choice page:
-        window.location.href = '../location/location.html';
-    }
-    
+    window.location.href = `../location/location.html?id=${landmarkSubArray}`;
 });
