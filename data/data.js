@@ -344,8 +344,8 @@ export const landmark = [
                 food: -20,
             }, {
                 id: 'ashland3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Visit Grizzly Peak',
+                result: `Walking down the mountain trail, you take in the views of Bear Creek Valley. Suddenly you notice a bear coming at you. Panicking, you climb up the nearest tree and get stuck there till the next morning.`,
                 energy: 0,
             }]
     }, {
