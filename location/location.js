@@ -17,7 +17,6 @@ const userInput = document.getElementById('user-input');
 updateView();
 const USER = 'USER';
     // grab the search params and use them to get the location from the data array
-const user = getState('USER');
 const searchParams = new URLSearchParams(window.location.search);
 const landmarkSubArray = searchParams.get('id');
 let nextLandmark = Number(landmarkSubArray) + 1;
