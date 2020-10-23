@@ -49,7 +49,7 @@ export const landmark = [
             top: '88%',
             left: '20%'
         },
-        description: 'Los Angeles officially the City of Los Angeles and often known by its initials L.A., is the largest city in California. With an estimated population of nearly four million people,[17] it is the second-most populous city in the United States (after New York City) and the third-most populous city in North America (after Mexico City and New York City). Los Angeles is known for its Mediterranean climate, ethnic diversity, Hollywood entertainment industry, and its sprawling metropolis.',
+        description: 'Los Angeles officially the City of Los Angeles and often known by its initials L.A., is the largest city in California. With an estimated population of nearly four million people, it is the second-most populous city in the United States (after New York City) and the third-most populous city in North America (after Mexico City and New York City). Los Angeles is known for its Mediterranean climate, ethnic diversity, Hollywood entertainment industry, and its sprawling metropolis.',
         choices: [
             {
                 id: 'map',
@@ -216,20 +216,20 @@ export const landmark = [
             },
             {
                 id: 'napa1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Take an Aloft Balloon Rides over wine country',
+                result: `The balloons gently rise 1,000 to 2,000 feet and float over some of Napa Valley's most famous vineyards, including Robert Mondavi and Domaine Chandon; on clear winter mornings the sight lines go all the way to the snowcapped Sierra Nevadas. After landing, the tour ends with breakfast and a glass of sparkling wine. You are feeling refreshed`,
                 energy: +20,
-                food: -20,
+                food: 0,
             }, {
                 id: 'napa2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Visit Culinary Institute of America at Greystone',
+                result: `Serious seekers of culinary and wine knowledge have flocked to this Napa Valley campus since 1995. The roster of food and wine courses here is formidable, ranging from one-day, hands-on cooking demonstrations—in artisanal bread-baking, say, or the flavors of Asia—to months-long professional certification programs for ambitious chefs and wine experts. You are not a food and wine expert`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'napa3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Napa Valley Wine Train',
+                result: `The three-hour tour includes the option of a multi-course lunch or dinner, as well as a private tour of one or two esteemed wineries, such as Grgich Hills and Domaine Chandon. However, you had too much to drink and have to recover`,
                 energy: 0,
             }]
     }, {
@@ -294,7 +294,7 @@ export const landmark = [
             {
                 id: 'weed1',
                 description: 'Alpaca on the Rocks',
-                result: `You discover a local farm store and get to meet alpacas, mini horses, and donkeys! You get caught up by your love of mini horses and lose a 3 hours.`,
+                result: `You discover a local farm store and get to meet alpacas, mini horses, and donkeys! You get caught up by your love of mini horses and lose 3 hours.`,
                 energy: +20,
                 food: -20,
             }, {
@@ -332,14 +332,14 @@ export const landmark = [
             },
             {
                 id: 'ashland1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Wolf Creek Tavern',
+                result: `There is no way you can pass the Wolf Creek Tavern from your favorite show, Ghost Adventures, without stopping. You walk to see if the place lives up to your expectations; seconds later, you run out shaking in terror with soiled pants.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'ashland2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Oregon Shakespeare Festival',
+                result: `You can't drive through Ashland and not hit up the theatre. You get to the box office and snag your tickets to a modern adaptation of Hamlet. Little did you realize you picked the LONGEST Shakespearian play. Five hours later, you crawl starving to the nearest brewery.`,
                 energy: -3,
                 food: -20,
             }, {
