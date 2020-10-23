@@ -1,1 +1,19 @@
-/* add home page styles here */
+body {
+    background-image: url(../assets/home/NUEVO.png);
+    background-repeat: no-repeat;
+}
+main {
+    margin-top: 370px;
+    width: 1000;
+}
+
+.home-instruction , .home-copy {
+    margin: 15px;
+}
+
+.home-list {
+    margin: 25px;
+}
+.home-title {
+    font-size: 2rem;
+}

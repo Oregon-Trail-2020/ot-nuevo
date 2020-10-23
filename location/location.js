@@ -7,7 +7,7 @@ import { hasCompletedAllLocations } from '../map/map-all-completed.js';
 import { scoreLocation } from '../utils/score-location.js';
 
 // User sees the image and description and choices that corresponds to the location
-// const image = document.getElementById('landmark-image');
+const image = document.getElementById('landmark-image');
 const landmarkDescription = document.getElementById('landmark-description');
 const ol = document.getElementById('choice-list');
 const resultDescription = document.getElementById('result-description');
@@ -22,7 +22,7 @@ const landmarkSubArray = searchParams.get('id');
 let nextLandmark = Number(landmarkSubArray) + 1;
     //Use that data array to display the image description and choices 
 
-// image.src = '../assets' + landmark[landmarkSubArray].image;
+image.src = '../assets' + landmark[landmarkSubArray].image;
 landmarkDescription.textContent = landmark[landmarkSubArray].description;
 
 function createChoice(choice) {
