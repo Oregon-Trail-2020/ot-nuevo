@@ -1,0 +1,25 @@
+main {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    background-image: url(../assets/results/result-tombstone.png);
+    background-repeat: no-repeat;
+    height: auto;
+    
+    /* max-width: 1000px; */
+    /* margin: 0 auto;
+    height: auto;
+    width: auto; */
+    margin-left: 80px;
+}
+section {
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
