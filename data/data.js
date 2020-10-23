@@ -49,7 +49,7 @@ export const landmark = [
             top: '88%',
             left: '20%'
         },
-        description: 'Los Angeles officially the City of Los Angeles and often known by its initials L.A., is the largest city in California. With an estimated population of nearly four million people,[17] it is the second-most populous city in the United States (after New York City) and the third-most populous city in North America (after Mexico City and New York City). Los Angeles is known for its Mediterranean climate, ethnic diversity, Hollywood entertainment industry, and its sprawling metropolis.',
+        description: 'Los Angeles officially the City of Los Angeles and often known by its initials L.A., is the largest city in California. With an estimated population of nearly four million people, it is the second-most populous city in the United States (after New York City) and the third-most populous city in North America (after Mexico City and New York City). Los Angeles is known for its Mediterranean climate, ethnic diversity, Hollywood entertainment industry, and its sprawling metropolis.',
         choices: [
             {
                 id: 'map',

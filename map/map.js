@@ -1,9 +1,7 @@
 
 import { landmark } from '../data/data.js';
 import checkCompleted from './map-check-completed.js';
-import { hasCompletedAllLocations } from './map-all-completed.js';
 import { getState } from '../utils/local-storage.js';
-import isDead from '../utils/is-dead.js';
 
 // console.log(landmark);
 const user = 'USER';
@@ -33,7 +31,6 @@ for (let i = 0; i < landmark.length; i++) {
     if (changeLocation.complete[location.id]) {
         // make a completed location display (with a checkmark)
         li = checkCompleted(location);
-        console.log('does this work');
     } else {
         li.textContent = landmark[i].title; 
     }
