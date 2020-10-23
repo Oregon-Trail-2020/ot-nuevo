@@ -99,21 +99,23 @@ export const landmark = [
             },
             {
                 id: 'grapevine1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
+                description: 'Stop at a gas station.',
+                result: `Buy a gas station hot dog spend the rest of the day in the bathroom.`,
+                energy: +10,
                 food: -20,
             }, {
                 id: 'grapevine2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Speed down I5',
+                result: `With the wind in your hair and Bon Jovi blaring, you fail to notice the cop who pulls you over for driving 90mph. You spend the night in jail and have to post bail to get out.`,
                 energy: -3,
-                food: -20,
+                food: 0,
             }, {
                 id: 'grapevine3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Go Pyramid Lake ',
+                result: `This detour cost you a couple of days, but it was worth it. You get jet ski's, paddle boats, and soak up the sun while you take in the lake's scenic beauty.`,
+                energy: 5,
+                food: -35
+
             }]
     }, {
 
@@ -174,22 +176,23 @@ export const landmark = [
                 description: 'Check inventory'
             },
             {
-                id: 'la1',
-                description: 'Some option 1',
-                result: `Some result 1`,
-                energy: +20,
-                food: -20,
+                id: 'sf1',
+                description: 'Head to downtown.',
+                result: `You failed to check for local activities before heading downtown, and unknowing got swept up in gay pride festivities. Twenty-four-hours later, you wake up with a wicked hangover and only one shoe.`,
+                energy: -20,
+                food: -25,
             }, {
-                id: 'la2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                id: 'sf2',
+                description: 'Checkout Chinatown',
+                result: `You arrive at the tea rooms and mah jong parlors of Chinatown one of the funnest places, the lingering hippie chic of Haight-Ashbury. You decide to stay and but leave hungry and tired from the sleepy time tea.`,
                 energy: -3,
                 food: -20,
             }, {
-                id: 'la3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                id: 'sf3',
+                description: 'Visit Ghirardelli Square.',
+                result: `After hitting up several stores, you stumble into the Ghirardelli chocolate shop, where you gorge yourself on far too much sugar.`,
+                energy: 5,
+                food: 20
             }]
     }, {
 
@@ -251,21 +254,22 @@ export const landmark = [
             },
             {
                 id: 'shasta1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Go hiking up Shasta',
+                result: `Walking on the trail you hear a noise above you. You look up to see a UFO. The space ship abducts you and you loose a week. Not remembering your name.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'shasta2',
-                description: 'Some option 2',
-                result: `Some result 1`,
-                energy: -3,
+                description: 'Go to a weed farm!',
+                result: `At the weed farm you eat to much edibles and pass out for a few hours and wake up with the munchies.`,
+                energy: -25,
                 food: -20,
             }, {
                 id: 'shasta3',
-                description: 'Some option 3',
-                result: `Some result3`,
-                energy: 0,
+                description: 'Hit up a waterfall',
+                result: `You get lost en route to Whiskeytown National Forest and end up in the heart of Redding, Ca. You see a group of people and stop to ask for directions. They invite you inside. You follow but quickly regret the decision when you realize you have been sucked into a charismatic megachurch twilight-zone. You lose 6 hours trying to politely excuse yourself from a prayer circle. `,
+                energy: -20,
+                food: -3,
             }]
     }, {
 
@@ -289,21 +293,22 @@ export const landmark = [
             },
             {
                 id: 'weed1',
-                description: 'Some option 1',
-                result: `Some result 1`,
+                description: 'Alpaca on the Rocks',
+                result: `You discover a local farm store and get to meet alpacas, mini horses, and donkeys! You get caught up by your love of mini horses and lose a 3 hours.`,
                 energy: +20,
                 food: -20,
             }, {
                 id: 'weed2',
-                description: 'Some option 2',
-                result: `Some result 1`,
+                description: 'Find the WEED',
+                result: `Living up to the town name, you decide too to try to find some weed. You end up looking all night, but all the shops are closed. You leave disappointed and empty-handed.`,
                 energy: -3,
                 food: -20,
             }, {
                 id: 'weed3',
-                description: 'Some option 3',
-                result: `Some result3`,
+                description: 'Go white water rafting',
+                result: `Head out on the Klamath River and loose every thing in the white water rapids.`,
                 energy: 0,
+                food: 0,
             }]
     }, {
 
