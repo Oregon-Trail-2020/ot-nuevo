@@ -82,7 +82,7 @@ export const landmark = [
 
         id: 'grapevine',
         title: 'Grapevine',
-        image: 'grapevine.png',
+        image: 'grape-vine.png',
         nextLandmark: 'Big Sur',
         map: {
             top: '80%',
