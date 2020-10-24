@@ -1,6 +1,4 @@
-# _OT Nuevo_
-
-
+# _Oregon Trail 2020_
 
 #### A modern version of The Oregon Trail, 10-23-2020
 
@@ -8,7 +6,7 @@
 
 ## Description
 
-_In Oregon Trail Nuevo the player assumes the role of a driver relocating and is faced with a series of choice as they relocate from San Diego, California to Portland, Oregon._
+_In Oregon Trail Nuevo the player assumes the role of a driver and is faced with a series of choices as they relocate from San Diego, California to Portland, Oregon._
 
 ## Setup/Installation Requirements
 
@@ -16,11 +14,6 @@ _In Oregon Trail Nuevo the player assumes the role of a driver relocating and is
 * _Navigate to root directory._
 * _Open index.html in text editor to view code._
 * _Launch index.html to in browser to display or view via [ghpages](https://oregon-trail-2020.github.io/ot-nuevo/)._
-
-
-## Known Bugs
-
-_No known bugs._
 
 ## Support and contact details
 
