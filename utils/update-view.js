@@ -3,6 +3,7 @@ import { getState } from './local-storage.js';
 const user = 'USER';
 
 function updateView() {
+
     const energy = document.getElementById('energy');
     const food = document.getElementById('food');
 

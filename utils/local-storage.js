@@ -10,4 +10,3 @@ export function saveState(KEY, value) {
     localStorage.setItem(KEY, stringyItem);
     return value;
 }
-
