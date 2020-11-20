@@ -1,5 +1,5 @@
 import updateView from '../utils/update-view.js';
-import { landmark } from '../data/data.js';
+import { landmark as landmarks } from '../data/data.js';
 import { getState, saveState } from '../utils/local-storage.js';
 import { addStuff } from '../utils/add.js';
 import isDead from '../utils/is-dead.js';
@@ -18,13 +18,14 @@ updateView();
 const USER = 'USER';
     // grab the search params and use them to get the location from the data array
 const searchParams = new URLSearchParams(window.location.search);
-const landmarkSubArray = searchParams.get('id');
-let nextLandmark = Number(landmarkSubArray) + 1;
+const landmarkId = searchParams.get('id');
+let nextLandmarkId = Number(landmarkId) + 1;
     //Use that data array to display the image description and choices 
 
+const landmark = landmarks[landmarkId];
 
-image.src = '../assets/location/' + landmark[landmarkSubArray].image;
-landmarkDescription.textContent = landmark[landmarkSubArray].description;
+image.src = '../assets/location/' + landmark.image;
+landmarkDescription.textContent = landmark.description;
 
 function createChoice(choice) {
     const li = document.createElement('li');
@@ -33,7 +34,7 @@ function createChoice(choice) {
 }
 // if there are no choices then we are going to first add complete via allCompleted()
 // navigate to results page
-if (landmark[landmarkSubArray].choices === undefined || landmark[landmarkSubArray].choices === null) {
+if (landmark.choices === undefined || landmark.choices === null) {
     updateView();
     const newUser = getState('USER');
     getState(newUser);
@@ -43,8 +44,9 @@ if (landmark[landmarkSubArray].choices === undefined || landmark[landmarkSubArra
     
     }, 9000);
 }
-for (let i = 0; i < landmark[landmarkSubArray].choices.length; i++) {
-    let choice = landmark[landmarkSubArray].choices[i];
+
+for (let i = 0; i < landmark.choices.length; i++) {
+    let choice = landmark.choices[i];
     const li = createChoice(choice);
     ol.appendChild(li);
 }
@@ -56,28 +58,24 @@ button.addEventListener('click', () => {
 
 
     if (userPick === 1) {
-        window.location.href = `../map/map.html?id=${landmarkSubArray}`;
+        window.location.href = `../map/map.html?id=${landmarkId}`;
     }
     if (userPick === 2) {
-        window.location.href = `../store/supply-store.html?id=${landmarkSubArray}`;
+        window.location.href = `../store/supply-store.html?id=${landmarkId}`;
     }
-    if (userPick === 3) {
-        // display result div
-        resultDescription.textContent = landmark[landmarkSubArray].choices[2].result;
-        addStuff(landmark[landmarkSubArray].choices[2].energy, landmark[landmarkSubArray].choices[2].food);
+
+    if (userPick > 2) {
+        // the index can be derived from the userPick by subtracting 1
+        const index = userPick - 1;
+
+        resultDescription.textContent = landmark.choices[index].result;
+        addStuff(landmark.choices[index].energy, landmark.choices[index].food);
     }
-    if (userPick === 4) {
-        resultDescription.textContent = landmark[landmarkSubArray].choices[3].result;
-        addStuff(landmark[landmarkSubArray].choices[3].energy, landmark[landmarkSubArray].choices[3].food);
-    }
-    if (userPick === 5) {
-        resultDescription.textContent = landmark[landmarkSubArray].choices[4].result;
-        addStuff(landmark[landmarkSubArray].choices[4].energy, landmark[landmarkSubArray].choices[4].food);
-    }
+   
     updateView();
     const newUser = getState('USER');
      // setting user completed function - scoreLocation <--- this sets to completed [true]
-    scoreLocation(landmark[landmarkSubArray].id, newUser);
+    scoreLocation(landmark.id, newUser);
     saveState(USER, newUser);
 
     // set timeout 
@@ -90,6 +88,6 @@ button.addEventListener('click', () => {
             return window.location.href = '../result/result.html';
         }
         // else statement direct to next location  
-        window.location.href = `../location/location.html?id=${nextLandmark}`;
+        window.location.href = `../location/location.html?id=${nextLandmarkId}`;
     }, 1200);
 });

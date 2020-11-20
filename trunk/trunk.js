@@ -10,18 +10,16 @@ const trunkAAA = document.getElementById('trunk-aaa');
 
 const user = 'USER';
 
+// would have liked to see this living in metadata somewhere
+const locations = [
+    '../location/location.html',
+    '../map/map.html',
+    '../store/supply-store.html'
+];
 button.addEventListener('click', () => {
     const userPick = Number(input.value);
 
-    if (userPick === 1) {
-        window.location.href = '../location/location.html';
-    }
-    if (userPick === 2) {
-        window.location.href = '../map/map.html';
-    }
-    if (userPick === 3) {
-        window.location.href = '../store/supply-store.html';
-    }
+    window.location.href = locations[userPick - 1];
 });
 
 const trunkState = getState(user);
