@@ -1,7 +1,7 @@
 import { getState, saveState } from '../utils/local-storage.js';
 
 const searchParams = new URLSearchParams(window.location.search);
-let landmarkSubArray = Number(searchParams.get('id'));
+let landmarkId = Number(searchParams.get('id'));
 
 
 const button = document.getElementById('buy-key');
@@ -14,35 +14,50 @@ const currentState = getState(USER);
 money.textContent = ` $${currentState.money}`;
 characterFood.textContent = ` ${currentState.food} items`;
 
-
+// would have liked to see this living in metadata somewhere instead of being hard coded in the code
+const changes = [
+    {
+        food: 15,
+        money: -10,
+        keyToIncrement: null,
+    },
+    {
+        food: null,
+        money: -100,
+        keyToIncrement: 'RepairKit',
+    },
+    {
+        food: null,
+        money: -200,
+        keyToIncrement: 'aaa',
+    },
+];
 button.addEventListener('click', () => {
     const userPick = Number(input.value);
     const currentInventory = getState(USER);
+    const change = changes[userPick - 1];
 
-    if (userPick === 1) {
-        currentInventory.food = currentInventory.food + 15;
-        currentInventory.money = currentInventory.money - 10;
-        saveState(USER, currentInventory);
+    ['food', 'money'].forEach(key => {
+        if (change[key]) {
+            currentInventory[key] = currentInventory[key] + change[key];
+        }
+    });
+
+    if (change.keyToIncrement) {
+        currentInventory[change.keyToIncrement]++; // hmmm, what's going on here?
     }
-    if (userPick === 2) {
-        currentInventory.RepairKit ++;
-        currentInventory.money = currentInventory.money - 100;
-        saveState(USER, currentInventory);
-    }
-    if (userPick === 3) {
-        currentInventory.aaa ++;
-        currentInventory.money = currentInventory.money - 200;
-        saveState(USER, currentInventory);
-    }
+
+    saveState(USER, currentInventory);
+
     money.textContent = `$${currentInventory.money}`;
     characterFood.textContent = `${currentInventory.food} items`;
 });
 
-if (landmarkSubArray === null) {
-    landmarkSubArray = 0;
+if (landmarkId === null) {
+    landmarkId = 0;
 }
 
 trunkButton.addEventListener('click', () => {
-    window.location.href = `../location/location.html?id=${landmarkSubArray}`;
+    window.location.href = `../location/location.html?id=${landmarkId}`;
 
 });
